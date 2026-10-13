@@ -1,0 +1,26 @@
+name: Workstream scope guard
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  scope:
+    name: scope
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out proposed head commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - name: Verify task branch only changes its assigned directory
+        run: |
+          python scripts/check_workstream_scope.py \
+            --base "${{ github.event.pull_request.base.sha }}" \
+            --head "${{ github.event.pull_request.head.sha }}" \
+            --branch "${{ github.head_ref }}"
