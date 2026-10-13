@@ -4,6 +4,9 @@
 - [x] GitHub repository and public knowledge templates
 - [x] Private Google Drive raw-document folder architecture
 - [x] Private Google Sheets master catalog
+- [x] MICCAI 2025–2026 pilot: 9 verified official-page records, 5 case notes, 5-layer schema
+- [ ] Complete 2025–2026 whole-corpus metadata index (2,194 accepted main-conference papers)
+- [ ] Audit MICCAI oral/spotlight status from conference schedules
 - [ ] Connect Zotero citation export
 - [ ] Import first explicitly selected sources
 - [ ] Review a first complete source → move → exercise chain

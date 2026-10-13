@@ -30,3 +30,7 @@ Real writing/research challenge → core idea → examples and contrasts → mic
 
 ## Pedagogical boundary
 A student-facing lesson must be a readable learning object, not a project status report. Keep internal source audits, deployment details, course progress metrics and AI workflow notes in `docs/` or private records.
+
+## MICCAI 2025–2026 as a scientific-writing base corpus
+
+[Official-paper corpus](../corpora/miccai/) currently contains a 9-paper pilot (3 introduction-level reads plus 6 abstract/review-level records), with a 5-layer annotation protocol and five analytic case studies. Distinguish sampling for scientific substance from sampling for linguistic style. See the [micro exercise](../practice/micro/EX-000002-miccai-reframing.md) and the [research writing workshop](../practice/research/RES-000001-miccai-scientific-framing.md).

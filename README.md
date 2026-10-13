@@ -14,6 +14,7 @@
 | [practice/](practice/) | 小练习与科研大练习 |
 | [courses/](courses/) | 面向学习者的教材、讲义与课程源码 |
 | [catalog/](catalog/) | 书目索引规则及经过审查的公开导出 |
+| [corpora/miccai/](corpora/miccai/) | **MICCAI 2025–2026** 官方开放论文的语言、叙事、论证与科学方法分析 |
 | [docs/](docs/) | 操作规范、索引标准、开发路线 |
 | [AGENTS.md](AGENTS.md) | AI/Codex 协作原则 |
 
