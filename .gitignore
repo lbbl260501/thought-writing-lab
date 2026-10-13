@@ -1,0 +1,21 @@
+# Store binary sources outside the public Git repository
+*.pdf
+*.epub
+*.mobi
+*.djvu
+*.zip
+*.7z
+*.sqlite
+*.sqlite-journal
+*.db
+*.db-journal
+.env
+.env.*
+!.env.example
+private/
+raw/
+cache/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
