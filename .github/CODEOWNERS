@@ -1,0 +1,11 @@
+# Review and responsibility map. The repo is currently controlled by one GitHub account.
+# CODEOWNERS records the owner, but it does NOT give separate ChatGPT chats distinct identities.
+* @lbbl260501
+
+# Main chat only - central protocols and CI
+/AGENTS.md @lbbl260501
+/README.md @lbbl260501
+/docs/ @lbbl260501
+/.github/ @lbbl260501
+/catalog/ @lbbl260501
+/corpora/miccai/ANNOTATION_GUIDE.md @lbbl260501

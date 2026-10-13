@@ -18,6 +18,14 @@
 | [docs/](docs/) | 操作规范、索引标准、开发路线 |
 | [AGENTS.md](AGENTS.md) | AI/Codex 协作原则 |
 
+## 多对话并行协作
+
+以本对话作为主控，五个专题子对话通过 GitHub Issue + 独立任务分支 + Pull Request 并行建设；[总任务 #1](https://github.com/lbbl260501/thought-writing-lab/issues/1)、[协作协议](docs/COORDINATION.md)、[子对话启动词](docs/CHAT_BRANCH_STARTERS.md) 负责消除文件、ID、语义和私有索引冲突。
+
+- 子对话仅向自己的工作分支写入，不直接修改 `main`。
+- 主对话统一维护课程规范、正式 ID、私人 Google Sheets 总索引，并审核 PR 后合并。
+- ChatGPT 的对话分支与 GitHub 分支不是同一个东西，进度以 GitHub 为准。
+
 ## 项目边界与存储
 
 - **GitHub**：原创笔记、概念定义、思想方法、练习、教材源文件、公开引用信息和版本历史。
