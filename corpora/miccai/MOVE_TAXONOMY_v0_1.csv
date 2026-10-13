@@ -1,0 +1,13 @@
+move_id,name_en,name_zh,scale,scientific_operation,writing_application
+ESTABLISH_TASK,Establish task significance,建立任务价值,micro/meso,Define domain and application stakes,First sentence and opening paragraph
+RECOGNIZE_CAPABILITY,Acknowledge prior capability,承认已有研究成就,micro/meso,Identify what prior work already solves,Prior work and concession
+IDENTIFY_TENSION,Identify a specific tension,识别特定矛盾,meso,Find a mismatch among goals methods and conditions,Research gap construction
+QUESTION_ASSUMPTION,Question hidden assumptions,质疑隐含假设,meso/macro,Inspect model premises and discarded distinctions,Scientific problem redefinition
+REFRAME_PROBLEM,Reframe the research problem,重构研究对象,macro,Change target constraints or evaluation frame,Introduction and proposal
+REFINE_GRANULARITY,Refine analysis granularity,细化分析粒度,meso/macro,Move from whole-system to case/region/voxel,Mechanism and experiment discussion
+MOTIVATE_PRINCIPLE,Derive design principles,导出设计原则,meso,Connect observed phenomenon to architectural choice,Method introduction
+MAP_MECHANISMS_TO_TENSIONS,Map method to tension,建立问题方法对应,meso,Test rationale of each method component,Method justification
+CONSTRUCT_MODEL,Formalize an object or relation,构建形式化模型,macro,Introduce quantities premises and constraints,Theory or methods
+CONSTRUCT_COUNTEREXAMPLE,Build a discriminating counterexample,构造区分性反例,macro,Compare competing hypotheses and derive experiments,Argument and discussion
+STATE_CONTRIBUTION,Position scientific contribution,定位科学贡献,meso,Distinguish performance mechanism and task insight,Abstract and intro final paragraph
+QUALIFY_SCOPE,Qualify claim scope,限定主张边界,micro/meso,Separate supported claims from further aspirations,Discussion and limitations
