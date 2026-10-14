@@ -50,3 +50,7 @@ See [Daily Studio](courses/daily/) and [daily teaching specification](docs/DAILY
 - Completion of a written lesson is **not** completion by the learner. Never fabricate scores, timestamps or personal submissions.
 - A dedicated child workstream may author new lesson batches on its short-lived Git branch. It must not access/write the personal private practice journal and must not rewrite existing published lessons without an explicit Issue scope.
 - The main conversation handles individual feedback, optional learning reminders, progress interpretation and level adjustment from actual submissions.
+
+## Updated collaboration blueprint (v2)
+
+Read [Operating Model v2](docs/OPERATING_MODEL_V2.md), [workstream contracts](docs/WORKSTREAM_DATA_CONTRACTS.md), and [GitHub review gates](docs/GITHUB_PROJECT_AND_REVIEW.md) before performing a new child task. Persistent chat roles are not persistent Git task branches. Explicit task-scoped branch, exact file scope, evidence locator and reviewable PR are required. The private learning journal remains under main-chat control.

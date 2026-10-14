@@ -33,6 +33,10 @@
 - [学习路线](courses/daily/cycle-01/ROADMAP.md)
 - [长期个人学习计划 #12](https://github.com/lbbl260501/thought-writing-lab/issues/12)
 
+## 跨对话协作制度 v2
+
+推荐从 [Operating Model v2](docs/OPERATING_MODEL_V2.md) 开始，配合 [跨组数据契约](docs/WORKSTREAM_DATA_CONTRACTS.md)、[GitHub Projects 与审校质量门](docs/GITHUB_PROJECT_AND_REVIEW.md) 和 [子对话操作手册](docs/CHILD_CHAT_PLAYBOOK_V2.md)。长期专题对话与短期 Git 分支分别管理，以 PR 和 Issue 为共同状态记录。
+
 ## 多对话并行协作
 
 以本对话作为主控，五个专题子对话通过 GitHub Issue + 独立任务分支 + Pull Request 并行建设；[总任务 #1](https://github.com/lbbl260501/thought-writing-lab/issues/1)、[协作协议](docs/COORDINATION.md)、[子对话启动词](docs/CHAT_BRANCH_STARTERS.md) 负责消除文件、ID、语义和私有索引冲突。

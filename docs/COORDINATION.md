@@ -1,5 +1,7 @@
 # 多对话并行协作协议 · Coordination v1.1
 
+> **新版本索引**：详细的研究室职责与多方协作，请以 [Operating Model v2](OPERATING_MODEL_V2.md)、[跨组数据契约](WORKSTREAM_DATA_CONTRACTS.md) 和 [GitHub 审查规范](GITHUB_PROJECT_AND_REVIEW.md) 为补充。下文保留 Cycle 0 的现有分支与任务绑定，避免丢失历史。
+
 > **This ChatGPT conversation is the main coordination chat.** Its children are independently operating research/writing conversations. GitHub is the durable shared state; a ChatGPT branch is **not** a Git branch.
 
 - 总控 Issue：[HQ #1](https://github.com/lbbl260501/thought-writing-lab/issues/1)
