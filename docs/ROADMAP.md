@@ -1,5 +1,8 @@
 # Roadmap
 
+> 本页只追踪当前/近期可交付工作。**长期使命与可持续研究组**见 [LONG_TERM_PROGRAM.md](LONG_TERM_PROGRAM.md)，完成本页任务不等于研究项目结束。
+
+
 ## Phase 1 — Operational foundation (current)
 - [x] GitHub repository and public knowledge templates
 - [x] Private Google Drive raw-document folder architecture

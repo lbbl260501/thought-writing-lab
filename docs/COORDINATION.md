@@ -1,4 +1,4 @@
-# 多对话并行协作协议 · Coordination v1.0
+# 多对话并行协作协议 · Coordination v1.1
 
 > **This ChatGPT conversation is the main coordination chat.** Its children are independently operating research/writing conversations. GitHub is the durable shared state; a ChatGPT branch is **not** a Git branch.
 
@@ -6,6 +6,16 @@
 - 子对话启动词：[CHAT_BRANCH_STARTERS.md](CHAT_BRANCH_STARTERS.md)
 - 交接标准：[HANDOFF_PROTOCOL.md](HANDOFF_PROTOCOL.md)
 - 核心科研/写作标准：[AGENTS.md](../AGENTS.md)、[SCHEMA.md](SCHEMA.md)、[MICCAI annotation guide](../corpora/miccai/ANNOTATION_GUIDE.md)
+
+## 0. Long-lived Program vs finite task (重要更新)
+
+长期安排见 [LONG_TERM_PROGRAM.md](LONG_TERM_PROGRAM.md)。已有五个子对话分工是 **Cycle 0 / seed tasks**，不是终身只研究 MICCAI 2025/2026 或完成 10 张卡片就停止。
+
+- **一个长期子对话可以连续完成多个 GitHub Issues 和多个短期任务分支**；不要把聊天分支与 Git 分支的生命周期绑定。
+- **#7–#11 是长期 Program Epics**；#2–#6 是第一轮有限任务。知识工程由 HQ #1 暂行承担。
+- 子对话应在当前任务完成后返回主对话申领/创建下一轮任务，从最新 `main` 创建**新分支**，并废弃/归档已合并的旧分支。
+- 即使 ChatGPT 对话因篇幅需要开启继任会话，只要以 GitHub Program/Issue/PR 为上下文，研究角色仍可持续。
+- 原有独占目录只对 **当前第一轮任务**有效；未来跨领域扩展需要为每个新 Issue 单独确定路径，不能私自放宽权限。
 
 ## 1. 权威来源与角色
 
@@ -19,7 +29,7 @@
 
 **Important:** All ChatGPT branches may share the same connected GitHub/Drive account. This is a **collaboration protocol**, not a technical permission boundary. A GitHub ruleset must be configured in the repository to make PR-only main updates enforceable.
 
-## 2. Five independently writable workstreams
+## 2. Cycle 0: Five independently writable workstreams
 
 | Chat/workstream | GitHub Issue | Exact Git branch | Only allowed paths |
 | --- | --- | --- | --- |
@@ -35,13 +45,13 @@ Shared main-owned files include `README.md`, `AGENTS.md`, `docs/`, `.github/`, `
 
 ## 3. Workflow: Issue → Chat → Git branch → Draft PR → review → main
 
-1. **Main assigns work** in an Issue with objectives, accepted path range, evidence standard and checkable output.
+1. **Main assigns work** in a finite Issue linked to one of the persistent [Program Epics](LONG_TERM_PROGRAM.md), with objectives, accepted path range, evidence standard and checkable output.
 2. **User starts a ChatGPT branch chat** (or a fresh chat in the same Project), pastes the corresponding starter from `CHAT_BRANCH_STARTERS.md`, and names the chat after the Issue.
 3. **Child reads live GitHub state** — `AGENTS.md`, this file, assigned Issue, and current branch; reading previous ChatGPT messages alone is not a reliable synchronization channel.
 4. **Child works only in the assigned Git branch**. Every tool write must specify the exact branch or update its ref, never default to `main`.
 5. **Child opens a Draft PR to `main`** when work is substantial enough to review; leave it unmerged. Share a compact update in the Issue.
 6. **Main evaluates** content, traceable evidence, deduplication, cross-track meaning conflicts and privacy; allocate global IDs and update private catalog.
-7. **Main merges** accepted PRs, posts integration outcome in the HQ Issue; child starts new task from the latest `main` on a *new* task branch.
+7. **Main merges** accepted PRs, posts integration outcome in the HQ Issue; child closes the finite task and starts the next task from the latest `main` on a *new* Git branch. The long-term domain responsibility remains active.
 
 GitHub PRs, not ChatGPT fork history, represent reviewable changes. Child chats are not expected to know work done in other chats after they branched.
 

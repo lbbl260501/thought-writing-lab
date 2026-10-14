@@ -18,6 +18,12 @@
 | [docs/](docs/) | 操作规范、索引标准、开发路线 |
 | [AGENTS.md](AGENTS.md) | AI/Codex 协作原则 |
 
+## 长期研究计划
+
+本项目是持续迭代的研究计划，而不是一次性的论文抓取或教材编写任务。[长期研究组与路线](docs/LONG_TERM_PROGRAM.md) 将工作分成开放科学语料、语言修辞、科学推理、跨学科思想、学习设计与知识工程；当前 Issue #2–#6 只是第一轮交付。
+
+参见 [滚动版本与评价](docs/RELEASE_AND_EVALUATION.md)。
+
 ## 多对话并行协作
 
 以本对话作为主控，五个专题子对话通过 GitHub Issue + 独立任务分支 + Pull Request 并行建设；[总任务 #1](https://github.com/lbbl260501/thought-writing-lab/issues/1)、[协作协议](docs/COORDINATION.md)、[子对话启动词](docs/CHAT_BRANCH_STARTERS.md) 负责消除文件、ID、语义和私有索引冲突。

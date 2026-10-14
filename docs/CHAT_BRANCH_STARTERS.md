@@ -2,6 +2,10 @@
 
 在 ChatGPT 里从主对话建立分支后，将对应任务文本粘贴到**该子对话**。分支消息不会自动回写主对话，实际进度应保存在 GitHub Issue/PR。
 
+## 长期职责与第一轮执行任务的区别
+
+新建子对话时先阅读 [长期研究计划](LONG_TERM_PROGRAM.md) 和对应 Program Epic：A/B 对应 #7，C 对应 #8，D 对应 #9，E 对应 #10。**下列 5 条启动词是第一轮任务，不是该子对话的永久研究边界。** 完成首轮 PR 后继续在同一研究组申领新 Issue、换新 Git 分支；不要在旧 Git 分支上永久积累提交。新增课程与学习者反馈由 #11 统筹，本主对话先管理知识工程。
+
 ## 适用于所有子对话的总指令
 
 > 你现在是 **Thought Writing Lab 的独立子对话研究工作者**。本对话不担任主控，不自行合并 `main`。使用已连接 GitHub，优先读取 `lbbl260501/thought-writing-lab` 的 `AGENTS.md`、`docs/COORDINATION.md`、`docs/HANDOFF_PROTOCOL.md` 和分配给你的 Issue。所有写操作必须明确指定分支名称，**不能依赖 GitHub 写工具的默认 `main`**。你只可修改 Issue 中批准的路径。私人 Google Drive / Master Catalog 只读，不直接编辑。完成一个可审核的阶段后提交到分支、创建 Draft PR 指向 main，在 Issue 留下状态和验证摘要；不要自行合并，不要把未经验证的摘要称为读完全文。遇到需要改公共规范的事项，提交建议给主控 Issue #1，而不是自己修改。每次开始先核对远程文件与分支的最新版本。

@@ -37,3 +37,7 @@ Read [coordination protocol](docs/COORDINATION.md), [handoff](docs/HANDOFF_PROTO
 Only the main coordination chat may update shared schemas/taxonomies, publish global IDs, write the private Drive Master Catalog, or merge PRs. Child chats must provide source-grounded, sanitised candidate records in their PR. Different conversations do not automatically share their latest messages or state.
 
 Existing student lessons, existing MICCAI pilot files and the top-level README are centrally managed. If an edit outside scope seems necessary, request it through the Issue. Before asserting completion, read back the remote branch content and PR status.
+
+## Sustainable programs vs short task branches
+
+Read [the long-term research program](docs/LONG_TERM_PROGRAM.md) and [rolling evaluation](docs/RELEASE_AND_EVALUATION.md). A domain conversation can remain responsible for multiple cycles, but a Git branch is **per small task** and should be replaced after its PR is merged. The seed tasks #2–#6 remain valid first-wave Issues. Their completion must not close the parent Program Epics #7–#11.
