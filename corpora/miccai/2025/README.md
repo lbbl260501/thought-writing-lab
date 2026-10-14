@@ -1,35 +1,35 @@
-# MICCAI 2025 · A 组语料收集（Issue #2）
+# MICCAI 2025 · A 组语料与逐篇精读（Issue #2）
 
-**范围**：本目录是 `Program #7 → Issue #2 → agent/miccai25/issue-2` 的 Cycle 0 交付。它保留可核验的文献元数据和原创分析，不镜像论文 PDF，也不生成正式全局 `PAPER-/MOVE-/EX-` 编号。
+## 当前成果：13 篇正文核读与逐节分析
 
-## 本次实收情况（2026-10-14）
+**从 [deep_reading/README.md](deep_reading/README.md) 开始阅读。** 2026-10-14，本轮将既有 13 篇论文全部读至正文结尾，新增 13 份独立分析，覆盖题名/摘要承诺、引言推进、方法前提、实验论证、讨论/结论、原创表达和可判别研究建议。没有扩大论文数量，也没有把分类标签当成阅读成果。
 
-- **13 篇不同的 MICCAI 2025 官方论文**已经逐一访问其官方网页，并核对题名、作者、官方论文入口、PDF 链接和 DOI；其中 **10 篇为独立于共享 pilot 的新案例候选**，其余 3 篇同共享 `corpora/miccai/pilot/pilot_catalog.csv` 有重叠（2322、1908、1747）。
-- 本次实际核读 **3 篇 PDF 的 Introduction（正文 pp.1–2）**：1316、1381、5008；不是“完整全文审计”。
-- 提交 **10 篇跨任务原创叙事/论证动作分析**，见 [cases.md](cases.md)。对仅访问摘要的论文，只分析摘要的结构，不声称已经核读 Introduction。
-- 官网列出的 2025 主会收录规模是 **1,027 篇**；本批 **13/1,027** 是目的性抽样，**绝非全量索引**、不代表总体频率，不应以本批估计 MICCAI 写作规范。
+引言以段落和句群为主要分析单位；短讨论进一步拆解句子功能。没有独立 Discussion 的论文，从结果解释与结论中提取讨论，不杜撰作者未写的章节。
 
-## 数据与阅读入口
+**实际完成**：官方 PDF 正文、相关方法说明与关键结果表的阅读，结合页面检查被分析的表图；完成首位读者的原创解释。**未完成**：独立复标、完整数学复证、实验复现、补充材料全面审计、全部引用文献重新核验以及临床有效性确认。
 
-| File | 内容 |
-| --- | --- |
-| [index.csv](index.csv) | 逐篇官方核验的来源记录、核读深度、暂定研究主题与候选动作 |
-| [cases.md](cases.md) | 10 个“事实—作者主张—分析者解释—审稿意见—迁移”的案例 |
-| [PROVENANCE.md](PROVENANCE.md) | 选样、来源、核验等级、尚待检查的字段和复核方法 |
-| [DEDUP_AND_HANDOFF.md](DEDUP_AND_HANDOFF.md) | 以官方 Paper ID 去重、与共享 pilot 对照、给 C/D/HQ 的交接 |
-| [TAXONOMY_CROSSWALK.md](TAXONOMY_CROSSWALK.md) | 与中央词表、C/D/B 最新分支及 CARS/AZ/CoreSC 的跨层比较；十例候选映射与待复标计划 |
+## 文件入口
 
-## 核验与知识边界
+| 文件 | 内容与状态 |
+|---|---|
+| [deep_reading/README.md](deep_reading/README.md) | 13 篇详细分析入口、章节定位及关键修正 |
+| [deep_reading/READING_COVERAGE.csv](deep_reading/READING_COVERAGE.csv) | 每篇引言、方法、结果、讨论及结论的实际范围 |
+| [index.csv](index.csv) | 初批书目索引；当前详细阅读状态以 coverage 为准 |
+| [cases.md](cases.md) | 原十例的稳定入口与深读文档映射；短卡已由深读替代 |
+| [PROVENANCE.md](PROVENANCE.md) | 来源范围、修正日志、尚待核验内容 |
+| [DEDUP_AND_HANDOFF.md](DEDUP_AND_HANDOFF.md) | 去重、跨组交接与审阅事项 |
+| [TAXONOMY_CROSSWALK.md](TAXONOMY_CROSSWALK.md) | 先前的概念级分类对照，作为辅助材料，不代替原文分析 |
 
-- `source_id` 采用临时可核验外部键 `miccai:2025:<paper_id>`。全局正式编号由 HQ 分配。
-- `verification_status=metadata_verified` 对只核实官方页、摘要或局部评审的记录采用**保守状态**；真实查阅范围另记于 `checked_scope`，不会把摘要核读写成引言核读。
-- `verification_status=introduction_read` 仅对本次确实打开并检查 PDF Introduction 的三篇使用。
-- `presentation_type` 为空白：本轮未逐项核对官方 Oral/Spotlight 日程。
-- `doi` 来自每篇 MICCAI 官方专页列出的 SpringerLink DOI，不从序号推造。
-- PDF、出版社附件、私人 Drive/Zotero 数据与受限全文均未进入本目录。
+## 首批范围与历史
 
-## 重要提醒
+本批有 13 个不同的 2025 官方 Paper ID；其中 2322、1908、1747 与共享 pilot 重叠，另 10 篇为相对于该 pilot 的新增来源。新精读也为这三篇提供独立的全篇分析，但不会新增三个重复的全局论文实体。
 
-本批优先刻意覆盖不同论证类型：**既有能力与未解决问题之间的落差、理论推广、问题单位重定义、评价轴转换、临床约束下的资源分配、审稿人挑战作者主张**。它是后续大规模索引和分层比较的质量基线，而非随机样本。正式比较研究须独立制定分层抽样框并核验覆盖率。
+最早一批仅有三篇引言核读和十张短卡。用户指出深度不足后，本轮转向所有13篇正文的逐节分析；原短卡中遗漏的患者子集、指标口径及作者自述局限已在新的篇章笔记中修正。历史版本仍由 Git 提交保留。
 
-官方索引：[MICCAI 2025 Open Access](https://papers.miccai.org/miccai-2025/)。
+仍不是全量 MICCAI 2025 索引。1,027 的分母沿用项目已记录的主会统计口径，本轮未重新枚举全量论文。样本为目的性选择，不能由此统计整个会议的写作规范或年代变化。
+
+## 分支与证据边界
+
+Program #7 → Issue #2 → `agent/miccai25/issue-2` → Draft PR #18。所有写入限于 `corpora/miccai/2025/`，不修改共享 pilot、中央词表、正式编号或私人总索引，不自行合并 main。
+
+本目录仅保存公开书目信息、来源链接和原创分析，没有上传论文 PDF 或私人材料。Oral/Spotlight 尚未逐项核实。作者报告、评审意见、本组解释与新增实验建议始终是不同层面的内容。
