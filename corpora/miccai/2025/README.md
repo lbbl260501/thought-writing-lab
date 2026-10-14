@@ -17,6 +17,7 @@
 | [cases.md](cases.md) | 10 个“事实—作者主张—分析者解释—审稿意见—迁移”的案例 |
 | [PROVENANCE.md](PROVENANCE.md) | 选样、来源、核验等级、尚待检查的字段和复核方法 |
 | [DEDUP_AND_HANDOFF.md](DEDUP_AND_HANDOFF.md) | 以官方 Paper ID 去重、与共享 pilot 对照、给 C/D/HQ 的交接 |
+| [TAXONOMY_CROSSWALK.md](TAXONOMY_CROSSWALK.md) | 与中央词表、C/D/B 最新分支及 CARS/AZ/CoreSC 的跨层比较；十例候选映射与待复标计划 |
 
 ## 核验与知识边界
 
