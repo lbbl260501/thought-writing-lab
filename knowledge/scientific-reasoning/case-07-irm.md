@@ -6,7 +6,7 @@
 
 - **Source**：Martin Arjovsky, Léon Bottou, Ishaan Gulrajani, David Lopez-Paz, *Invariant Risk Minimization* (2019).
 - **正式或公开论文入口**：https://arxiv.org/abs/1907.02893
-- **另一参考入口**：https://arxiv.org/html/1907.02893
+- **另一参考入口**：https://arxiv.org/abs/1907.02893（与上方相同；优先使用该页面可检索的正文）
 - **本轮实际核读**：arXiv 原文可访问的 Introduction、Section 2 与 Section 3（Definition 3）；未把数学构造的所有定理、证明或数值实验记为完整审计。属于预印本来源。
 - **证据地位**：下述“作者主张”来自论文可核读部分；假设、形式化、实验、反例及迁移主要是本研究室的 `ANALYST_INTERPRETATION` / `TRANSFER_HYPOTHESIS`，不是原文的新结论。
 
