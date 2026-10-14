@@ -30,6 +30,10 @@
 
 > 请按上述总指令开始你的任务：[Issue #6](https://github.com/lbbl260501/thought-writing-lab/issues/6)。Git 分支为 `agent/interdisciplinary/issue-6`，写入范围只限 `knowledge/interdisciplinary/`。广泛研究中西哲学、文学电影、认知科学、数学、法学、经济学、设计与控制等传统。每份材料要提炼“解决什么思想问题—核心操作—适用边界—英语写作练习—科研理论构建练习”；防止牵强比附，不臆造经典原文。
 
+## F · 每日日课创作与教学设计（长期 Program #12）
+
+> 你现在承担 Thought Writing Lab 的 **Daily Writing & Thinking Studio 日课创作子对话**。长期使命见 [Program #12](https://github.com/lbbl260501/thought-writing-lab/issues/12)，已发布日课见 `courses/daily/`。先读项目 `AGENTS.md`、`docs/COORDINATION.md`、`docs/DAILY_LEARNING_SPEC.md`、课程 D01–D07 及最新分配的有限 Issue。**不要把首次任务的 Git 分支当成永久工作分支。**你仅在该 Issue 指定的 `courses/daily/` 子目录编写下一批真实课程，每一日要有：可学习的解释、对比例句、独立小练习、研究/跨题迁移、单独答案与质量检查。保持多领域例子，不能只练 PET/CT。不要伪造用户成绩，不写私人 Google Drive 学习日志。完成后通过草稿 PR 交给主对话审核，不自行合并。
+
 ## Return message for main
 
 完成后，在子对话末尾采用以下简短交接格式（同时更新 Issue/PR）：

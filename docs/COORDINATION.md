@@ -17,6 +17,12 @@
 - 即使 ChatGPT 对话因篇幅需要开启继任会话，只要以 GitHub Program/Issue/PR 为上下文，研究角色仍可持续。
 - 原有独占目录只对 **当前第一轮任务**有效；未来跨领域扩展需要为每个新 Issue 单独确定路径，不能私自放宽权限。
 
+## 新增应用端：F · 每日个人学习
+
+长期领域由 [Program #12](https://github.com/lbbl260501/thought-writing-lab/issues/12) 管理。项目公开的日课属于 `courses/daily/`，由 main 审核后进入正式课程；可由专门的 F 子对话在**下一轮有限任务 Issue**范围内撰写。私人完成记录、作文原稿、评分、补救练习调整由 main 与用户管理，**F 子对话仅负责公共教材的生产**，不直接改私人 Google Sheets。
+
+首个 28-Day 路线与 Week 01 日课由 main 初始化；后续每个 Week 形成新 Issue + 新 Git branch，不能把课程发布当作学习者已完成。
+
 ## 1. 权威来源与角色
 
 | What | Authoritative location | Write responsibility |

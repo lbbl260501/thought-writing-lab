@@ -18,6 +18,7 @@ Research Program → persistent workstreams / program Issues → versioned relea
 | [P-Reasoning #9](https://github.com/lbbl260501/thought-writing-lab/issues/9) | 科学问题、概念定义、假设、理论抽象、竞争解释、实验设计、论证和证据链 | [#5](https://github.com/lbbl260501/thought-writing-lab/issues/5) | main |
 | [P-Thought #10](https://github.com/lbbl260501/thought-writing-lab/issues/10) | 全球思想传统、文学艺术和理工社会科学中的抽象方法与跨领域迁移 | [#6](https://github.com/lbbl260501/thought-writing-lab/issues/6) | main |
 | [P-Learning #11](https://github.com/lbbl260501/thought-writing-lab/issues/11) | 教材、考研/四六级/雅思托福/科研小题与论文大练习、教学试用、反馈改进 | Next finite Issue to be assigned | main |
+| [P-Daily #12](https://github.com/lbbl260501/thought-writing-lab/issues/12) | 按学习日循序渐进的英语写作、科研问题训练、延迟检索、私人反馈和能力评价 | [首轮日课 #13](https://github.com/lbbl260501/thought-writing-lab/issues/13) | main evaluates learner; topic chat can author materials |
 | [P-Infrastructure HQ #1](https://github.com/lbbl260501/thought-writing-lab/issues/1) | GitHub/Drive/Zotero/索引与语义一致性、标注审校、数据质量、发布与备份 | Managed centrally until safe delegation | main |
 
 **P-Corpus 的 A/B 两个子对话在第一轮分别处理 2025/2026；以后可以重新分配为“资料接入与验证”及“跨论文研究分析”或新的领域批次，不把年份等同终身岗位。**
@@ -29,6 +30,10 @@ Research Program → persistent workstreams / program Issues → versioned relea
 - **Task Issue**：有有限范围和验收准则，通常只覆盖一次可审阅的交付。
 - **Git branch**：随任务而建，PR 合并后关闭/归档；**不**因为子对话长期存续，就令 Git 分支持续数月分叉。
 - **ChatGPT topic conversation**：承担一个长期角色，并通过每轮 GitHub Issues/PR 实际工作。对话可交接/换代；角色与知识不会因聊天窗口失去上下文而消失。
+
+## 从知识生产到个人能力的应用端
+
+[P-Daily #12](https://github.com/lbbl260501/thought-writing-lab/issues/12) 承担主动训练，而非仅把新词句堆入资料库。个人学习任务按“检索 → 讲解 → 微训练 → 科研迁移 → 反馈 → 延迟测试”循环，首轮从 [日课计划](../courses/daily/) 进入。长期保留个人学习结果私有，与公开课程内容完全分离。
 
 ## 永续的研究回路
 
@@ -72,4 +77,4 @@ Research Program → persistent workstreams / program Issues → versioned relea
 
 ## 如何处理当前已有任务
 
-当前 #2–#6 是 **Cycle 0 / first-wave seed tasks**：任务、分支和交付标准保持有效。它们完成后关闭的是该任务 Issue 和相应 PR，而不是长期 Program #7–#11。后续按实际发现创建下一轮有价值的 Issue，不需要为了维持“长期”把一个有限任务改得无限宽泛。
+当前 #2–#6 和 #13 是 **Cycle 0 / first-wave seed tasks**：任务、分支和交付标准保持有效。它们完成后关闭的是该任务 Issue 和相应 PR，而不是长期 Program #7–#12。后续按实际发现创建下一轮有价值的 Issue，不需要为了维持“长期”把一个有限任务改得无限宽泛。

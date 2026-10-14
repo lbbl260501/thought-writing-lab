@@ -19,6 +19,7 @@ ALLOWED = {
     "agent/academic-english/": ("language/academic-writing/",),
     "agent/scientific-reasoning/": ("knowledge/scientific-reasoning/",),
     "agent/interdisciplinary/": ("knowledge/interdisciplinary/",),
+    "agent/daily-learning/": ("courses/daily/",),
 }
 # Integration and core-governance PRs are main-chat owned and manually reviewed.
 MAINTAINER_PREFIX = "coord/"

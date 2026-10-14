@@ -44,3 +44,9 @@ A release is not accepted merely because it contains N PDFs, N cards or N pages.
 ## Main-controlled integration
 
 Domain research may outgrow a particular child chat. To hand over, a successor chat reads the program Epic, the latest Issues and PRs, schemas, and case/material indexes; it does not rely on the preceding chat's hidden context. Private Drive/Sheets remain main-controlled until an explicit safe synchronization workflow exists.
+
+## Personal daily learning is not the same as course publication
+
+The separate [daily learning program](../courses/daily/) tests what an individual learner can reproduce from memory, revise and transfer to unseen research/exam prompts. A published lesson is an **instructional artifact**; an actual session requires a learner submission. Record scores and error profiles only in the private Drive journal. A lesson remains unpublished if it only has a topic title or unchecked AI-generated answers.
+
+Suggested checkpoints: Day 0 baseline; Day 7 unseen transfer; Day 14 new paragraph diagnosis; Day 21 introduction comparison; Day 28 unseen integrated task against Day 0. These are planned checkpoints, **not already observed learning outcomes**.

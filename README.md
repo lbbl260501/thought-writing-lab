@@ -24,6 +24,15 @@
 
 参见 [滚动版本与评价](docs/RELEASE_AND_EVALUATION.md)。
 
+## 每日学习与个人训练
+
+[Daily Writing & Thinking Studio](courses/daily/) 已发布 Cycle 01 的 28 个学习日课程地图、起点诊断和 Week 01 七份真实日课及单独答案。个人原稿、反馈与学习进度保存在**私有** Google Drive 训练日志，不进入公开仓库。日课按完成情况循序推进，漏学时不强制跳到下一个编号。
+
+- [从第一讲开始](courses/daily/cycle-01/week-01/D01.md)
+- [首周七讲](courses/daily/cycle-01/week-01/README.md)
+- [学习路线](courses/daily/cycle-01/ROADMAP.md)
+- [长期个人学习计划 #12](https://github.com/lbbl260501/thought-writing-lab/issues/12)
+
 ## 多对话并行协作
 
 以本对话作为主控，五个专题子对话通过 GitHub Issue + 独立任务分支 + Pull Request 并行建设；[总任务 #1](https://github.com/lbbl260501/thought-writing-lab/issues/1)、[协作协议](docs/COORDINATION.md)、[子对话启动词](docs/CHAT_BRANCH_STARTERS.md) 负责消除文件、ID、语义和私有索引冲突。

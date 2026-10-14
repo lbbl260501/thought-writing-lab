@@ -41,3 +41,12 @@ Existing student lessons, existing MICCAI pilot files and the top-level README a
 ## Sustainable programs vs short task branches
 
 Read [the long-term research program](docs/LONG_TERM_PROGRAM.md) and [rolling evaluation](docs/RELEASE_AND_EVALUATION.md). A domain conversation can remain responsible for multiple cycles, but a Git branch is **per small task** and should be replaced after its PR is merged. The seed tasks #2–#6 remain valid first-wave Issues. Their completion must not close the parent Program Epics #7–#11.
+
+## Daily personal learning (Program #12)
+
+See [Daily Studio](courses/daily/) and [daily teaching specification](docs/DAILY_LEARNING_SPEC.md). Learner-facing lessons belong in `courses/daily/`; editorial audits, pedagogy protocols and private performance live elsewhere.
+
+- A lesson must teach one clear linguistic or scientific reasoning operation, include a worked contrast and a genuinely answerable small exercise, contain a transfer task and have separate explanatory solutions.
+- Completion of a written lesson is **not** completion by the learner. Never fabricate scores, timestamps or personal submissions.
+- A dedicated child workstream may author new lesson batches on its short-lived Git branch. It must not access/write the personal private practice journal and must not rewrite existing published lessons without an explicit Issue scope.
+- The main conversation handles individual feedback, optional learning reminders, progress interpretation and level adjustment from actual submissions.
