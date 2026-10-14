@@ -1,60 +1,77 @@
-# Coverage & verification audit · MICCAI 2026 (Issue #3)
+# Coverage & verification audit · MICCAI 2026 / Issue #3
 
-Audit date: **2026-10-14**. Current phase: **seed sample / draft for review**, not a complete conference census.
+Updated: **2026-10-14, batch 02**. Stage: expanded purposive sample with PDF introduction close readings; still a Draft PR, not a complete conference census.
 
-## Counts and sampling frame
+## Current canonical counts
 
-| Item | Count / status | Meaning |
-| --- | ---: | --- |
-| MICCAI 2026 accepted papers, according to the conference's official publication information | 1,167 reported | Denominator is an official conference-level claim, not independently re-counted here. |
-| Source metadata records in `sources.csv` | 19 | Nineteen *individual official MICCAI 2026 paper landing pages* checked. |
-| Abstract + selected peer-review section checked | 10 | The ten named records in `problem_framing_cases.md`; **not** full-text or full-review audits. |
-| Source metadata/landing page + abstract checked; review not encoded | 9 | Intentionally left at `metadata_verified` as a conservative status. |
-| Original problem-framing analysis cases | 10 | Intentionally diverse problem mechanisms; NOT a frequency estimate. |
-| PDF introductions audited | 0 | No paper should be upgraded to `introduction_read` at present. |
-| Entire paper content audited | 0 | No paper should be upgraded to `fulltext_audited`. |
-| Official oral/spotlight presentation type verified | 0 | `presentation_type` intentionally blank. |
-| Paper-specific DOIs cross-checked | 0 | `doi` intentionally blank until publisher verification. |
+| Item | Count | Interpretation |
+|---|---:|---|
+| Unique source records in `sources.csv` | 40 | 19 retained seed records plus 21 new official-paper records |
+| Highest recorded status: `metadata_verified` | 29 | Metadata and the specifically visible text checked; not necessarily a complete abstract audit |
+| Highest recorded status: `abstract_and_reviews_verified` | 6 | Abstract and selected review passages; not complete review consensus |
+| Highest recorded status: `introduction_read` | 5 | Entire Introduction section checked in the official PDF, plus individually specified evidence spot-checks |
+| `fulltext_audited` | 0 | No complete methods/results/citations/implementation audit is claimed |
+| Initial abstract-level case notes | 10 | Historical first-batch analytical snapshot in `problem_framing_cases.md` |
+| New introduction-level close readings | 5 | 5533, 4859, 1806, 6055, 5049 |
+| Distinct papers covered by either analytical artifact | 11 | Four deep readings upgrade earlier cases; FRODO/5533 is one additional analyzed paper; do not report 15 unique analyzed papers |
+| Verified DOI fields | 0 | Blank rather than guessed |
+| Verified presentation-type fields | 0 | No Oral/Spotlight ranking or weighting has been performed |
 
-**Reproducible selection logic**: `sources.csv` begins with **the first 18 consecutive titles in official paper-list order** (`0001` through `0018`) and adds one targeted theory/argumentation case at official list index `0273` (`Paper0321`). Its resulting title distribution is alphabetically biased. A subsequent selection by scientific problem type and method is needed before comparing frequencies, years, review outcomes, or genres. The 10 casebook examples are a purposive **mechanism-diversity** sample, not a random or representative sample.
+The current source inventory is `sources.csv`; the prior casebook remains an abstract-level snapshot. Its old reading-limit statements are not a report of the latest inventory. Current reading depth is established by the CSV and `introductions/evidence.jsonl`.
 
-## Official source anchors
+## What changed in this pass
 
-- Official MICCAI 2026 paper index: <https://papers.miccai.org/miccai-2026/>
-- Each index row supplies the exact `0001-Paper2705.html`-style official locator and linked PDF URL in `sources.csv`.
-- The publication evidence is the *official paper landing page* containing title, authors, abstract, and accessible reviewer content. The commentary analyses use the abstract and selected reviewer sections only.
-- The conference-level accepted-paper denominator was checked against the MICCAI 2026 conference/publication announcement (<https://miccai2026.org/en/>); it must be rechecked at the final-index stage if the archive expands.
+- Added 21 official records across computational allocation, uncertainty/calibration, incomplete multimodal information, registration/planning, representation evaluation and reasoning-oriented clinical tasks.
+- Read five complete PDF introductions and inspected their actual page boundaries. MA-MoE's Introduction extends through the contribution paragraph on page 4; the large Figure 1 on page 3 is not the end of the Introduction.
+- Added a Chinese original analytical casebook with paragraph-function maps, problem–method bridges, original English contrast examples and claim-to-evidence checks.
+- Revisited selected methods/results instead of treating generic critique as a source fact. Failure-detection validation thresholds and confidence intervals are already present. OncoAgent already includes a GTV-prior comparator and blinded clinician ratings.
+- Preserved the distinction between actual paper evidence and proposed experiments. None of the proposals was executed by this project.
 
-## Verification dimensions & deliberately missing information
+## Source anchors and version
 
-- **Known from official listing:** author strings and title, paper ID, landing URL, paper PDF link, abstract and selected available review text.
-- **Not independently verified:** evaluation metrics reported in each paper beyond authors' assertions; dataset availability and licenses; complete paper methods/results; scientific correctness; reimplementation; full peer-review consensus; clinical deployment.
-- **No inferred bibliometrics:** DOI, oral/spotlight status, award, acceptance percentile, citation count, and keyword frequency are not populated by guesses.
-- **Distinctions used:** `AUTHOR_CLAIM` (what the authors' abstract asserts) vs `REVIEWER_OPINION` (one reviewer) vs `ANALYST_INTERPRETATION` (our reconstruction) vs `TRANSFER_HYPOTHESIS` (not-yet-run experimental proposal).
-- **Copyright boundary:** no raw PDFs, bulk review text or extended source quotes committed; only metadata, links and original synthesis.
+Official archive: https://papers.miccai.org/miccai-2026/
 
-## Case-domain coverage
+Per-paper exact official URLs, author strings and linked PDF locators are preserved in the CSV. The deep-reading manifest records the official accepted-version PDF, one-based PDF pages, checked sections and unverified areas. Page images were inspected where figures/tables or paragraph boundaries mattered. Source PDFs and screenshots are not redistributed in this repository.
 
-The deliberately distinct focal mechanisms include: incomplete inverse reconstruction (`2705`); guideline-integrated clinical decisions (`2852`); perturbation-derived directional interactions (`6105`); biomechanical/thermal simulator surrogates for planning (`4859`); updateable clinical contour rules (`5049`); dataset/benchmark contribution (`5454`); clinical error detection under distribution shift (`6055`); architecture-imposed vs actually learned modality asymmetry (`1806`); few-shot foundation learning (`4243`); and failure-memory continual learning (`0321`).
+This pass did not independently reconcile the full archive against a final proceedings census. The conference-wide denominator shown in the previous coverage draft is therefore not carried forward as a verified denominator, and no percentage-of-conference coverage is reported.
 
-## Open issues before scientific/general writing claims
+## Sampling design and limitations
 
-1. Broaden to **at most 100 verified records in this cycle**, with explicit sampling strata (clinical/biological problem, technique, data scale, evaluation problem, journal/meeting distinctions). Do not silently inflate the current sample.
-2. Build at least one **introduction-read** case with PDF section or page locator and check whether the reconstructed abstract moves match actual introduction moves.
-3. Cross-check paper abstracts' key performance figures against full experimental sections. For reviews, distinguish critical opinions, author replies, and final dispositions rather than treating one review as consensus.
-4. Verify specific **presentation types using official schedule**. Do not rank examples as oral/spotlight until then.
-5. Add DOI only from trustworthy proceedings/publisher sources; detect duplicates based on official PaperID and normalized title.
-6. Ask HQ to assign stable `PAPER-*`, `MOVE-*` or `EX-*` identifiers at integration, not on this child branch.
-7. Coordinate cross-year comparison with A through HQ. B does not modify 2025 files, the shared pilot, schemas or the private Master Catalog.
+Batch 01 retains the first 18 consecutive official listing entries (`0001`–`0018`) plus targeted entry `0273`. Batch 02 deliberately broadens the comparison set using the 21 fixed IDs and group rationale in `BATCH02_SELECTION.md`.
 
-## Review checklist
+This is **purposive selection**, not probability sampling or a balanced stratified sample. The fixed manifest makes the selection reproducible, but does not justify prevalence estimates, year-to-year trend claims, or claims about conference-wide writing norms. Biomedical multimodality, trustworthiness, geometry and planning remain over-represented relative to an unmeasured conference population.
 
-- [x] Exactly one authorized folder for B.
-- [x] Ten traceable, independently selected scientific-framing analyses.
-- [x] Per-source `checked_scope` and provisional external identifiers.
-- [x] Exposed source-bias and evidence-limits; no presentation-status guesses.
-- [ ] Full introduction-level citations for chosen cases.
-- [ ] Broader stratified 2026 sample with formally specified denominator/reconciliation.
-- [ ] Cross-author/peer-review reconciliation and quality audit by HQ/Q.
+## Data quality exceptions
 
-**Verdict:** a valid, explicitly partial source-grounded seed dataset, suitable for a Draft PR and review; **not** a finished representative corpus or a validated comparative study.
+- Paper2389 and Paper4147 have visibly truncated landing-page abstracts; their `checked_scope` explicitly records this. Metadata verification does not certify complete abstract text.
+- Paper4499 has a malformed volume string in the official BibTeX. That field is not imported.
+- Paper authors come from the paper-author section/BibTeX rather than the webpage byline.
+- Leading-zero external IDs are preserved as strings.
+- Paper4853 and Paper4859 have related authors/topics but distinct official IDs/titles; they are not treated as duplicate sources.
+- A linked PDF URL is not, by itself, evidence that the entire PDF has been read. This distinction applies particularly to the 21 new intake records.
+
+## Interpretation controls
+
+`AUTHOR_CLAIM`: what the source reports, not independently reproduced results.
+
+`REVIEWER_OPINION`: a specific reviewer's judgment, not consensus or verified scientific fact. The expanded notes do not claim complete rebuttal/meta-review reconciliation.
+
+`ANALYST_INTERPRETATION`: our reconstruction of paragraph function, information flow and problem formulation. Function-unit labels do not mechanically count physical paragraphs.
+
+`TRANSFER_HYPOTHESIS`: a proposed research comparison or experiment. Original English examples are writing demonstrations, not source quotations or empirical results.
+
+Important distinctions discovered in the deeper pass:
+
+1. QSM-primary/FLAIR-conditioning and shared-versus-specific experts are different modeling relationships.
+2. Fast forward prediction, expanded candidate search and correct final decisions require different evidence.
+3. Clinically unacceptable segmentation is not synonymous with an out-of-distribution input.
+4. No target-task training annotations is not the same as no labeled inputs or pretrained components anywhere in the workflow.
+5. Tool-call transfer across guidelines is not automatically geometric segmentation transfer or clinical benefit.
+
+## Review and remaining work
+
+The authoring pass has delivered the expanded index, original deep readings and evidence locators. **Independent HQ/Q review remains outstanding.** No merge, stable-ID allocation, private Master Catalog update, source-code execution or learner evaluation has occurred.
+
+Next bounded research candidates are paired Introduction comparisons: FRODO vs MA-MoE for modality roles; Paper4859 vs Paper4853 for forward search vs inverse inference; Paper6055 vs Paper1236/4499 for failure, calibration and uncertainty. The latter newly ingested papers must actually be read before being promoted.
+
+Further corpus expansion remains within this task's up-to-100 scope, but count growth should not substitute for evidence depth. Oral status, DOI validation, complete review reconciliation and cross-year representativeness still require separate checks.
