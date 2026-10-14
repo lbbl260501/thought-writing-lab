@@ -1,44 +1,40 @@
 # C · Academic English, Discourse & Scientific Rhetoric
 
-**Program:** [#8](https://github.com/lbbl260501/thought-writing-lab/issues/8) · **Cycle 0:** [#4](https://github.com/lbbl260501/thought-writing-lab/issues/4) · **Status:** candidate artifacts for HQ review, not integrated to main.
+**Program:** [#8](https://github.com/lbbl260501/thought-writing-lab/issues/8) · **Finite task:** [#4](https://github.com/lbbl260501/thought-writing-lab/issues/4) · **Draft PR:** [#21](https://github.com/lbbl260501/thought-writing-lab/pull/21)。研究候选材料，未合并到main。
+
+## 当前入口：v0.2 原文细读与分类研究
+
+从 [v0.2读本入口](v02/README.md) 开始。本轮增加12篇科研样本的短摘录细读，并实际复核6篇旧MICCAI样本的相关页段。新版把原文、上下文释读、本库解释和原创改写分开；主分类细化为8个家族、24个子类，另记关系、证据、语言、信息与语境。
+
+| 阅读材料 | 用途 |
+|---|---|
+| [原文细读A](v02/CLOSE_READING_A.md) | nnU-Net、MedSAM、Metrics Reloaded、Aurora、LiteNeXt、UNETR++：贡献位置、目标属性、评价依据与设计依赖 |
+| [原文细读B](v02/CLOSE_READING_B.md) | Models Genesis、SAM、MAE、校准、DyCON、公平性：类比、问题链、信号用途与推论边界 |
+| [分类手册](v02/CODEBOOK.md) | 分类定义、纳入/排除标准、近邻反例与旧标签迁移 |
+| [实际核读与修订记录](v02/AUDIT_AND_REVISION.md) | 来源、阅读版本、访问失败、纠错与后续待检验事项 |
+| [结构化索引](v02/CORPUS.json) | 18篇科研源、3篇方法参考、24个候选类别与12条核心标注索引 |
+
+**重要范围：** 选读源文不等于全文审计；作者报告不等于独立复现。Models Genesis本轮因正文读取问题仅可靠核读摘要。作者稿与出版社最终稿不混同。分类尚无独立复标一致性或真实学习者效果结果。
 
 ## 研究命题
 
-科研写作不是“高级词汇 + 模板句”的简单叠加。一个可迁移的表达动作，需要同时说清：
+科研写作不是高级词汇与模板句的简单叠加。应同时追问：科学命题是什么；语法结构与语义角色是否准确；新信息怎样进入；此处完成了什么叙事动作；在当前读者、体裁和证据条件下是否成立。
 
-1. **科学内容**：究竟在断言什么？是观察、作者假设、方法设计，还是实验结果？
-2. **主体—动作—客体**：谁在执行什么科学动作，作用于什么对象？动词承诺了多强的结论？
-3. **信息结构**：读者已知的内容如何成为下一句的起点；下一句究竟推进什么新内容？
-4. **语篇功能**：这句话是在承认既有成果、建立具体矛盾、重设问题、提出原则，还是收束贡献？
-5. **修辞边界**：在何种证据强度、体裁、读者和篇幅下，这种表达合理；何时会误导？
+核心单位是**语境中的科学命题与表达动作**。主谓宾是分析入口，不是全部句法：被动、系表、非谓语与疑问句不能硬填成相同结构。修辞策略可以明确定位贡献和突出有利证据，关键是不能在改写中悄悄改变主张对象、比较范围或条件。
 
-**核心单位 = Thinking move × Writing move × Evidence status × Reader context。** 这属于 C 的候选分析框架，不是获准修改的中央 schema。
+## v0.1历史材料：保留为释写与训练资源
 
-## 本次目录
+| 文件 | 继续保留的用途 |
+|---|---|
+| [SOURCE_AUDIT.md](SOURCE_AUDIT.md) | 首轮来源记录；实际复核与更精确范围以v0.2审计为准 |
+| [MOVE_TAXONOMY_V0.md](MOVE_TAXONOMY_V0.md) | 早期候选分类；新分类见v0.2，保留映射而不静默覆盖 |
+| [SOURCE_GROUNDED_CASES_24.md](SOURCE_GROUNDED_CASES_24.md) | 24条本库独立英文释写，不是作者原句，不用于原文句法/词频统计 |
+| [EXERCISES_10.md](EXERCISES_10.md) | 独立写作任务 |
+| [EXERCISE_ANSWERS_10.md](EXERCISE_ANSWERS_10.md) | 单独示范答案与理由；仍需结合新版证据边界检查 |
+| [HANDOFF_ISSUE4.md](HANDOFF_ISSUE4.md) | 首轮交接历史；新增研究状态见v0.2审计和PR讨论 |
 
-| 文件 | 面向对象 | 用途 |
-| --- | --- | --- |
-| [SOURCE_AUDIT.md](SOURCE_AUDIT.md) | A/B、Q、HQ | 6 篇 MICCAI 2025 官网论文；确切核读范围和来源边界 |
-| [MOVE_TAXONOMY_V0.md](MOVE_TAXONOMY_V0.md) | C、D、F | 可操作的词汇、句法、信息结构、语篇动作分类与诊断准则 |
-| [SOURCE_GROUNDED_CASES_24.md](SOURCE_GROUNDED_CASES_24.md) | C、F | 24 条独立英文释写案例；来源页段定位、SVO、叙事动作、注意事项 |
-| [EXERCISES_10.md](EXERCISES_10.md) | 学习者、F | 10 题由句到段再到跨体裁迁移的真实写作任务 |
-| [EXERCISE_ANSWERS_10.md](EXERCISE_ANSWERS_10.md) | 学习者、F | 单独的示范答案、诊断过程、科学陈述的适用边界 |
-| [HANDOFF_ISSUE4.md](HANDOFF_ISSUE4.md) | HQ/Q | 核验清单、候选分类、跨组交接和待决问题 |
+## 如何使用
 
-## 建议使用顺序
+先在原文卡中读一个完整的局部论证，再自行判断主要动作和最近邻类别。对照分类理由，尝试改变一句表达，检查是否改动了科学含义。最后再做相应的释写训练。不要把参考答案视为唯一标准，也不要把已生成材料视为学习者已经掌握。
 
-先读 [MOVE_TAXONOMY_V0.md](MOVE_TAXONOMY_V0.md) 的前两部分，然后随机选取 [24 个案例](SOURCE_GROUNDED_CASES_24.md) 中 3 条，**先自行标出 scientific subject、verb、object、given/new 与 move，再与卡片对比**。最后独立完成相应练习，再看解析。不要把示范答案当唯一标准。课程开发组 F 可以借鉴练习机制，但不得把研究工作稿自动当作发布版日课。
-
-## 区分研究发现与教学设想
-
-- 原论文关于算法或实验的陈述：**AUTHOR_CLAIM**，本项目并未复现实验。
-- 我们对语言结构、语篇动作和修改优劣的判断：**ANALYST_INTERPRETATION**。
-- 将某个句式迁移到另一个科研问题或考试场景：**TRANSFER_HYPOTHESIS**，必须测试是否仍准确、自然、有效。
-- 审稿意见是 **REVIEWER_OPINION**，即使值得重视也不是独立核实的定论。
-- 24 个原创英文释写句 **不是** 作者原句、直接引文或原文逐句翻译；其事实依据和页段定位在案。
-
-## 初始边界与后续计划
-
-本轮六篇均来自 MICCAI 2025，适合生成首批可检验的动作假设；**不能据此断言某个表达习惯通行于 MIA、TMI、BSPC，或适用于所有 CET、考研、IELTS/TOEFL 写作**。下一轮应由 HQ 审定跨体裁取样方案：顶刊长引言、低质量反例、英语考试体裁和真实学习者错误，进一步建立可复标、可统计的对照集。
-
-不保存原著 PDF、私人文件链接、学生原稿或未经确认的稳定全局 ID。所有写入均局限于本任务的 Git 分支和目录。
+公开库保存原创分析、可核验短摘录与安全的来源信息，不保存原始受限PDF、私人文件链接、学生原稿或正式全局编号的自行分配。主控负责独立复核安排、中央分类整合和main合并。
