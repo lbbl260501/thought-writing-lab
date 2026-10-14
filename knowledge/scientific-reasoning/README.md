@@ -1,35 +1,26 @@
-# D · 科学问题与理论构建研究室｜Cycle 0
+# D · 科学问题与理论构建研究室｜Issue #5
 
-本目录是 [长期 Program #9](https://github.com/lbbl260501/thought-writing-lab/issues/9) 的首轮交付，对应有限任务 [Issue #5](https://github.com/lbbl260501/thought-writing-lab/issues/5)。该目录由 D 子对话在 `agent/scientific-reasoning/issue-5` 上独立编写，**尚待主对话审查合并**。
+本目录服务于长期 Program #9；当前有限任务在 `agent/scientific-reasoning/issue-5`、Draft PR #20 中迭代。未自行合并或发布全局编号。
 
-## 研究问题
+## 当前入口：原材料细读与比较研究
 
-为什么某个可观察现象值得被重新定义？如何在“提出技术”之前找出假设、可识别对象、竞争性解释和判别性证据？我们把“研究创新”拆为问题/对象、建模前提、可证伪假设、评价坐标与方法实现，尤其反对以网络组件名替代科学问题。
+[进入十二篇正文研究](deep-reading/README.md)。2026-10-14 深化稿新增 8 篇、深化原有 4 篇，文献样本由 8 扩至 16。正文短摘均有具体定位；作者报告、本库解释和未执行的实验建议分开。十二篇的含义是选定正文部分经过核读，不是十二篇全部证明、代码和实验均完成审计。
 
-## 首轮八例
+| 专题 | 阅读入口 |
+|---|---|
+| 校准的定义、条件与测量 | [Guo / Minderer / MMA-LTS](deep-reading/01-calibration.md) |
+| 理论的构造、归属与识别条件 | [Locor / Risks of IRM](deep-reading/02-theory-and-identification.md) |
+| 解释证据、模型选择与公平归因 | [Sanity Checks / DomainBed / nnU-Net Revisited](deep-reading/03-evidence-and-comparison.md) |
+| 预测、条件效应、长期演化与执行 | [CAMOS / CDFP-Net / GNS / Diffusion Policy](deep-reading/04-prediction-and-decision.md) |
 
-| 条目（临时 ID） | 案例 | 最核心的可迁移思维动作 | 已核读深度 |
-|---|---|---|---|
-| [case-01](case-01-challenge-decomposition.md) | C²MAOT | 多个困难→单一可辨识机制 | 官网摘要与评审；参考既有 pilot |
-| [case-02](case-02-workflow-inversion.md) | CAMOS | 逆向任务重构→临床任务边界 | 引言相关页+官网摘要与评审 |
-| [case-03](case-03-local-assumption.md) | Locor | 质疑全局假设→局部函数建模 | 引言、相关工作及方法建模段 |
-| [case-04](case-04-identity-over-count.md) | MMA-LTS | 数量→输入身份与空间位置 | 官网摘要与评审 |
-| [case-05](case-05-asymmetry-vs-adaptation.md) | CDFP-Net | 架构角色先验→可干预属性 | 官网摘要及可见评审 |
-| [case-06](case-06-shortcut.md) | Shortcut learning | 高分预测→反事实信号识别 | 期刊摘要/预印本摘要 |
-| [case-07](case-07-irm.md) | IRM | 多环境相关→不变性及条件 | 预印本引言、§2–3（定义） |
-| [case-08](case-08-wilds.md) | WILDS | 随机分割→部署分布评价 | PMLR 论文摘要 |
+[综合研究框架](deep-reading/SYNTHESIS.md) · [必须修正的初版判断](deep-reading/CLAIM_UPDATES.md) · [来源审核](SOURCE_AUDIT.md) · [机器可读读取账本](deep-reading/READING_LEDGER.json)
 
-## 配套研究成果
+## 初版案例入口
 
-- [思维动作地图](RESEARCH_MOVE_ATLAS.md)：以科学推理和可检验性为轴，提取可迁移操作，而非套句模板。
-- [来源核验和不确定性记录](SOURCE_AUDIT.md)：每一条判断区分作者主张、审稿意见、本组解释与待实验建议。
-- [科研工作坊与评判样例](WORKSHOP.md)：PET/CT、手术规划和遥感三个跨领域迁移任务，各自含挑战、诊断和参考判断。
+[01 C²MAOT](case-01-challenge-decomposition.md)、[02 CAMOS 修订](case-02-workflow-inversion.md)、[03 Locor 修订](case-03-local-assumption.md)、[04 MMA-LTS 修订](case-04-identity-over-count.md)、[05 CDFP-Net 修订](case-05-asymmetry-vs-adaptation.md)、[06 Shortcut Learning](case-06-shortcut.md)、[07 原始 IRM](case-07-irm.md)、[08 WILDS](case-08-wilds.md)。未在本轮重读的 01/06/07/08 不自动升级阅读状态。
 
-## 输入与输出
+初步[思维动作地图](RESEARCH_MOVE_ATLAS.md)与[迁移工作坊](WORKSHOP.md)保留为研究草稿；涉及已有论文已经做过什么、当前核读范围及创新归属时，以深化稿与主张修订记录为准。工作坊情境均是假想，不是用户数据或已完成实验。
 
-- **来自 A/B**：论文官网、原文核读定位、作者主张与审稿意见；若使用他组二次整理，注明只读了二次分析还是原文。
-- **交付 C**：科学对象、动作、逻辑关系、主张强度和反例；C 再设计自然的英语实现，D 不独自决定语言规范。
-- **交付 F**：可独立完成的研究练习、目标能力、评分标准和参考分析；F 才负责发布正式学习者课程。
-- **交付 Q/HQ**：主张、证据、推理前提、可能推翻命题的结果及潜在重复条目，待独立挑战与统一编号。
+## 下游用途与边界
 
-**界限**：八例不等于八条被验证的科学定律。方法卡只说明如何从文献发现可检验的研究空间；未经本研究室实测的方案、效应和病例均作为建议或假设。首轮未把任何个人病例、书籍 PDF、私人索引或稳定全局 ID 写入公开仓库。
+C 可从明确的科学关系设计自然英语表达；F 可把问题与参考判断改成有分离答案的正式课程；Q 应优先核查正文位置、已有对照和定理条件；HQ 负责去重、全局编号及合并。当前稿件是研究资料，不等于学习者已学习、已掌握或课程已经发布。

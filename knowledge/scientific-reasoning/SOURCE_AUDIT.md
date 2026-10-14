@@ -1,32 +1,38 @@
-# 来源核验表与主张来源纪律｜Issue #5
+# 来源核验与阅读深度｜2026-10-14 深化修订
 
-核验时间：2026-10-14。本表记录 **本轮 D 对话真正访问并检查的范围**；先前全库已有的阅读笔记只作为参考，不可自动继承为本轮全文阅读。
+本轮通过原始论文 PDF 核读 12 篇的选定正文，并查看涉及的关键图、表和公式页面。新样本 8 篇、旧样本深化 4 篇，库内不同论文样本共 16 篇。不是系统综述，不对任何条目声称代码复现、完整证明认证或 FULLTEXT_AUDITED。
 
-| 临时条目 | 一手来源和定位 | 本轮证据深度 | 当前支持的事实边界 |
-|---|---|---|---|
-| draft:issue-5:case-01 | [MICCAI 2025 C²MAOT](https://papers.miccai.org/miccai-2025/0124-Paper2322.html) 的 Abstract 与 Reviews；[既有 pilot](../../corpora/miccai/pilot/PAPER-000001-C2MAOT.md) | ABSTRACT_AND_REVIEWS_VERIFIED | 三类挑战、提出的两机制及作者报告的结果；PDF 未在本轮重读 |
-| draft:issue-5:case-02 | [MICCAI 2025 CAMOS](https://papers.miccai.org/miccai-2025/0320-Paper1908.html)；[原文 PDF](https://papers.miccai.org/miccai-2025/paper/1908_paper.pdf) 引言印刷第 2 页 | INTRODUCTION_READ (selected) + REVIEWS | 由骨驱动到目标面貌预测的流程、作者的实验数据规模；不包含可执行骨移动计划的验证 |
-| draft:issue-5:case-03 | [MICCAI 2025 Locor](https://papers.miccai.org/miccai-2025/0636-Paper1747.html)；[原文 PDF](https://papers.miccai.org/miccai-2025/paper/1747_paper.pdf) 印刷第 2–4 页，Methods 式(3)(4) | METHODS_PARTIALLY_READ | 全球/局部函数依赖、局部系数与全局学习基函数；未审计全部实验 |
-| draft:issue-5:case-04 | [MICCAI 2026 MMA-LTS](https://papers.miccai.org/miccai-2026/0659-Paper1236.html) 的 Abstract 与 Reviews | ABSTRACT_AND_REVIEWS_VERIFIED | 缺失模态组合身份与空间校准假设；公式和效果未独立复核 |
-| draft:issue-5:case-05 | [MICCAI 2026 CDFP-Net](https://papers.miccai.org/miccai-2026/0157-Paper2844.html) 的 Abstract 与可见评审 | ABSTRACT_AND_REVIEWS_VERIFIED | PET 锚点引导 CT、扩散先验和 MA-MIP 设计；病例级资源选择不是本文已证实内容 |
-| draft:issue-5:case-06 | [Geirhos et al., Nature Machine Intelligence 2020](https://www.nature.com/articles/s42256-020-00257-z) 的元数据和 Abstract；[arXiv 摘要](https://arxiv.org/abs/2004.07780) | ABSTRACT_VERIFIED; Perspective | Shortcut 是跨基准不迁移的预测规则概念；不能据此认定具体模型存在 shortcut |
-| draft:issue-5:case-07 | [Arjovsky et al., arXiv:1907.02893](https://arxiv.org/abs/1907.02893) 的 Introduction、§2、§3 Definition 3 | INTRODUCTION_AND_FORMULATION_READ | 表示+共同最优头的不变性原则；不意味着普遍因果恢复保证 |
-| draft:issue-5:case-08 | [Koh et al., ICML/PMLR 2021](https://proceedings.mlr.press/v139/koh21a.html) 的 Abstract；[研究团队解读](https://www.robotics.stanford.edu/blog/wilds/) | ABSTRACT_VERIFIED | 论文摘要所述 10 数据集和真实分布偏移研究动机；未逐项复现实验 |
+## 本轮逐源记录
 
-**注意**：部分通用协议使用 `metadata_verified`、`abstract_and_reviews_verified`、`introduction_read`、`fulltext_audited`。本表采用更细的可读范围说明而不暗示新的全局 schema；正式规范由 HQ 决定。
+| 临时 case | 原材料与版本 | 实际读取范围与关键位置 |
+|---|---|---|
+| 09 | Guo et al., ICML 2017 | 引言、§2、§4.2、选定结果；p.1 Fig.1，p.6 Eq.(9)/Table 1 |
+| 10 | Minderer et al., NeurIPS 2021 | 引言、设置、比较、度量讨论与结论；p.4 Fig.1，p.10 Fig.9 |
+| 04 | MMA-LTS, MICCAI 2026 | 引言、方法、数据划分、评价与消融；pp.2/5/6/8 |
+| 03 | Locor, MICCAI 2025 | 引言、相关工作、方法、实验与讨论的相关段落；pp.4/6–8 |
+| 12 | Risks of IRM, ICLR 2021 页眉的 arXiv PDF | §§3–6，pp.6–7 的定理与主文证明思路；附录证明未逐行核验 |
+| 11 | Sanity Checks, NeurIPS 2018 | 引言、§§2–5 的方法与讨论；pp.2/4/5 图示 |
+| 13 | DomainBed，实际读取 arXiv 2020-07-02 v1 | §§2–5，p.4 选择规则；不能冒充 ICLR 2021 最终版表格 |
+| 14 | nnU-Net Revisited, MICCAI 2024 | 问题诊断、实验设置与结果；p.6 Fig.1，p.7 Table 1 |
+| 02 | CAMOS, MICCAI 2025 | 引言、表面构建、评价和结论；pp.2/6–8 |
+| 05 | CDFP-Net, MICCAI 2026 | 方法、设置、消融与结论；p.5 Eqs.(4)–(5)，p.8 Tables 2–4 |
+| 15 | Graph-network simulator, ICML 2020 | 表示、训练噪声、评价与消融；p.6 Fig.3，p.8 Fig.4 |
+| 16 | Diffusion Policy, RSS 2023 作者 PDF | 引言、§II 分布/时域、设计讨论、§VIII；pp.3/11 |
 
-## 四种主张不得混淆
+完整原文链接、页数、短摘位置和未查部分见 [READING_LEDGER.json](deep-reading/READING_LEDGER.json)，逐篇分析见 [细读入口](deep-reading/README.md)。所有页码为所链接 PDF 的顺序页，从 1 起算，不是论文集连续页码。
 
-- **AUTHOR_CLAIM**：作者在所核读原始来源里确实声称的结果或动机；不等于本组复现事实。
-- **REVIEWER_OPINION**：官网评审对新颖性、临床转化或实验充分性的意见；不能作为判定缺陷成立的充分证据。
-- **ANALYST_INTERPRETATION**：D 对研究对象、隐含假设、问题改变和论证关系的解释；需接受原文与异域挑战。
-- **TRANSFER_HYPOTHESIS / PROPOSED_EXPERIMENT**：将已读思想迁到 PET/CT、VSP、遥感等新任务的设计；尚无运行结果，不得写为已证明的结论。
+## 保留但未在本轮重查的初版条目
 
-## 首轮尚未完成的核验
+01 C²MAOT：初版记录为官网摘要/评审及既有 pilot 参考。06 Shortcut Learning：初版记录为期刊/预印本摘要。07 原始 IRM：初版记录为引言及定义。08 WILDS：初版记录为官方摘要及研究团队说明。这里保留历史记录，不把它们计入本轮十二篇正文核读，也不通过新论文的引用自动认证旧卡全部内容。
 
-1. 对 C²MAOT、MMA-LTS 和 CDFP-Net 进行逐段正文核读、关键公式和表格核对，并比较真实训练/推理开销与统计检验。
-2. CAMOS 的“optimal”目标定义、专家/患者有效性及手术可行性评估，需要回到方法和实验全文，避免被英语形容词误导。
-3. Locor 的 J 与局部窗口敏感性、配准计算延迟及跨病例方差，需要方法/实验全篇核验。
-4. IRM 的理论前提与经典反例尚需用原文证明及后续批评文献进行对抗复核；不能宣称因果充分性。
-5. WILDS 基准的具体外部域分割方式及数据集演变应独立检查；外部域 ≠ 任意真实未来域。
-6. 跨 C/A/B 的候选条目去重由 HQ 决定；8 张方法卡本身不自动生成 8 个 `MOVE-` 稳定编号。
+## 主张与证据层级
+
+作者在正文报告了某个实验，不等于本库独立复现；官方评审意见也不自动成为已证实缺陷。本库的解释、类比、反例框架和判别性实验均为 ANALYST_INTERPRETATION 或 TRANSFER_HYPOTHESIS / PROPOSED_EXPERIMENT。已有对照与拟议新增对照必须分开，参见 [主张修订](deep-reading/CLAIM_UPDATES.md)。
+
+## 原材料摘录规范
+
+公开文件保留必要短引及精确定位，配以原创释义和研究拆解，不重新分发整篇 PDF、整页图片或整张数据表。短引不作为全文替代；无法确认的原句、版本或页码不补造。不能以当前 PDF 可访问推断其全部内容可自由再发布。
+
+## 仍未解决的检查
+
+需要 Q 对关键原句和图表作独立抽样；理论附录和代码未复核；病例级输出与实验方差没有重新计算；新研究建议尚无运行证据。源版本差异、跨组重复概念和正式编号交给 HQ。当前材料适合研究提案和教学转换，不应表述为已验证的新临床方法。
