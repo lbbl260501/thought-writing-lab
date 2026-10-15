@@ -1,0 +1,41 @@
+{
+  "scope": "2 representative cards; relation targets refer to the complete 36-card attachment, not this sample alone",
+  "records": [
+    {
+      "id": "B04-W08", "unit": "U02", "headword": "condition", "pos": "v. / n.", "family": "conditioning; conditional; conditioned",
+      "write_when": "我想写清哪一个对象依赖哪一个条件。",
+      "sense": "condition X on Y 的方向是‘让 X 以 Y 为条件’。先标出被作用的对象，再标出条件信息，不把 on 的两端写反。",
+      "collocations": [
+        {"en":"condition X on Y","zh":"使 X 以 Y 为条件","kind":"开放语法框架"},
+        {"en":"be conditioned on context","zh":"以上下文为条件","kind":"开放语法框架"},
+        {"en":"a conditioning signal","zh":"条件信号","kind":"术语性组合"},
+        {"en":"conditional on X","zh":"在 X 条件下","kind":"开放语法框架"}
+      ],
+      "examples": [
+        {"id":"B04-S08a","en":"We condition the lesion representation on features of the surrounding tissue.","zh":"我们让病灶表示以周围组织的特征为条件。","genre":"research","status":"original_hypothetical"},
+        {"id":"B04-S08b","en":"Access to the archive is conditional on completion of the training session.","zh":"使用档案库以完成培训为条件。","genre":"cross_context","status":"original_hypothetical"}
+      ],
+      "contrast": "condition 说明依赖关系；fuse 说明信息结合；modulate 说明某种调整操作。条件化可以通过调制实现，但两词不是同义替换。",
+      "related": [{"target":"B04-W09","relation":"关系与实现"},{"target":"B04-W12","relation":"互补性不等于方向"}],
+      "basis":"F_p4_lexical_anchor"
+    },
+    {
+      "id":"B04-W28","unit":"U05","headword":"reduction","pos":"n.","family":"reduce; reduced; reducing",
+      "write_when":"我需要明确减少的是数量、比例还是代价，并把它接到下一句。",
+      "sense":"常用 reduction in 指对象，reduction of 指减少量；by 报变化量，to 报终点。数值之间的关系比选同义词更重要。",
+      "collocations":[
+        {"en":"a reduction in X","zh":"X 的减少","kind":"开放语法框架"},
+        {"en":"a reduction of X units","zh":"减少 X 个单位","kind":"开放语法框架"},
+        {"en":"reduce X by Y","zh":"将 X 减少 Y","kind":"开放语法框架"},
+        {"en":"reduce X to Y","zh":"将 X 减少到 Y","kind":"开放语法框架"}
+      ],
+      "examples":[
+        {"id":"B04-S28a","en":"Memory use fell from 10 to 7 GB, a reduction of 3 GB.","zh":"内存使用从 10 GB 降至 7 GB，减少了 3 GB。","genre":"research","status":"original_hypothetical"},
+        {"id":"B04-S28b","en":"The revised schedule reduced waiting time by 20 minutes, not to 20 minutes.","zh":"修改后的安排使等待时间减少了 20 分钟，而不是减少到 20 分钟。","genre":"cross_context","status":"original_hypothetical"}
+      ],
+      "contrast":"百分比与百分点不同。假设错误率从 20% 降到 15%，是下降 5 个百分点，或相对下降 25%；不要写成相同概念。",
+      "related":[{"target":"B04-W25","relation":"操作的结果"},{"target":"B04-W31","relation":"以 this reduction 接解释"}],
+      "basis":"prior_B03_result_extension"
+    }
+  ]
+}

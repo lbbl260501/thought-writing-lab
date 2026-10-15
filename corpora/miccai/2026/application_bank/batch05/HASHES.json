@@ -1,0 +1,18 @@
+{
+  "task": "B / Issue #3 / Batch05",
+  "date": "2026-10-15",
+  "status": "draft / author self-check; no merge",
+  "files": [
+    {"filename":"Applied_Wordbook_02.pdf","pages":63,"bytes":1113341,"sha256":"2066ba0397b0399198afc003166f5120d5fc253da16945b64ef5e1222aacff81"},
+    {"filename":"Applied_Wordbook_02_Answers.pdf","pages":11,"bytes":768143,"sha256":"874dd2bb25b916ea8ef99491d6b3aa492fe1abee23441e105114262e6a439cf1"},
+    {"filename":"Applied_Wordbank_01_02.html","bytes":150416,"sha256":"ee97d269e86bc1584ab2d6143e6b5715eb875487d657b0ecbe7cca868399e34f"},
+    {"filename":"Applied_Wordbook_02_Source.zip","bytes":2079104,"sha256":"41b5d955190de372034c8118ac89fc1d51b81c5debd596d242769206716f32a0"}
+  ],
+  "new_inventory":{"cards":48,"collocation_records":192,"bilingual_lexical_examples":96,"directed_relations":144,"cross_volume_relations":48,"functional_patterns":16,"unit_paragraphs":8,"whole_paper_section_paragraphs":4,"numbered_exercises":36,"extra_transfer_prompts":3},
+  "combined_inventory":{"unique_headwords":84,"collocation_records":336,"unique_english_collocation_strings":334,"directed_relations":216},
+  "new_scientific_source_ids":0,
+  "remote_scope":["README.md","INDEX.tsv (all48 compact rows)","SOURCE_AUDIT.md","HASHES.json"],
+  "attachment_scope":"Complete new48 and prior36 card data, units, examples, separate answers, offline HTML, editable learner text, PDF generator and generated PDFs are in the conversation ZIP; not fully synchronized to GitHub or Drive.",
+  "checks":{"student_pages":63,"answer_pages":11,"student_links":667,"out_of_page_text_blocks":0,"replacement_character_pages":0,"invalid_internal_page_targets":0,"html_initial_cards":84,"html_chinese_search":true,"html_crosslink_navigation":true,"html_javascript_errors":0},
+  "limits":"Original hypothetical teaching examples; two brief source fragments; no representative word-frequency analysis, independent experiment reproduction, learner scores, font distribution or merge. HTML interactions tested through Chromium set_content, not every file viewer."
+}

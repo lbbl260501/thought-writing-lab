@@ -1,0 +1,27 @@
+{
+  "task": "Issue #3 / B / Batch04",
+  "date": "2026-10-14",
+  "generated_files": [
+    {"filename":"Applied_Wordbook_01.pdf","pages":41,"bytes":942703,"sha256":"c48411d4f4fae3eced390ac03af50d5916eeb81d0782c584e8dcb064e4bee8c2"},
+    {"filename":"Applied_Wordbook_01_Answers.pdf","pages":7,"bytes":686031,"sha256":"002df8756f0ae5ea33a5827559c6dbc45e37efb47e473581bbe0e209173f5686"},
+    {"filename":"Applied_Wordbook_01_Source.zip","bytes":160501,"sha256":"179cb7dd43ed824440d49ddc443bdfd61be642816ee49ff138bced775ebbb683"}
+  ],
+  "inventory": {
+    "application_cards":36,
+    "collocation_and_frame_records":144,
+    "unique_english_collocation_strings":143,
+    "lexical_bilingual_examples":72,
+    "typed_directed_lexical_relations":72,
+    "functional_patterns":12,
+    "original_paragraphs":6,
+    "exercises_with_separate_explanatory_answers":18
+  },
+  "remote_scope": ["README.md", "BANK_DESIGN.md", "CARD_SAMPLE.json (2 cards only)", "HANDOFF.json"],
+  "complete_data_delivery": "Conversation ZIP attachment contains all 36 cards, six units, keys, learner Markdown and HTML, editable data and PDF builder. The complete source bank and PDFs have NOT been fully synchronized to GitHub, Drive or a Release in this pass.",
+  "source_reuse": "Partly reuses earlier B03 lexical material. Do not add 36 to the old 70 as an independently deduplicated lemma total.",
+  "new_scientific_sources_added": 0,
+  "evidence_scope": "Original hypothetical teaching examples; limited paper phrase anchors, prior B03 annotations and disclosed dictionary/editorial sources. No conference-wide frequency analysis or independent learner study.",
+  "pdf_checks": {"student_pages":41,"answer_pages":7,"student_links":198,"out_of_page_text_blocks":0,"replacement_character_pages":0,"render_review":"PyMuPDF page renders; complete student contact sheet and selected full-size pages"},
+  "review_request": "Review applicability, collocational naturalness, relation labels and exercise difficulty. After learner feedback, ingest the complete source ZIP into the authorized branch or centrally integrate it; do not assume current remote files already contain the full corpus.",
+  "status": "draft / author self-check; no merge; no global IDs; no private journal writes"
+}
