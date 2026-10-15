@@ -1,0 +1,49 @@
+id	unit	headword	write_when	collocations	links_new	link_volume01
+B05-W01	U07	define	我需要约定一个词或量在本研究中指什么。	define X as Y | define the scope of X | a clearly defined endpoint | define a decision rule	operationalize | scope	characterize
+B05-W02	U07	operationalize	我想把抽象概念变成能观察、记录或检验的东西。	operationalize a construct | operationalize X as Y | an operational definition of X | operationalize X through Y	define | criterion	assess
+B05-W03	U07	scope	我需要说明结论或方法覆盖哪些对象与条件。	the scope of the study | within the scope of X | extend the scope of X | outside the scope of X	assumption | unresolved	limitation
+B05-W04	U07	assumption	我想让一个推导或解释依赖的前提显露出来。	under the assumption that… | relax an assumption | test the validity of an assumption | an implicit assumption	explicit | control for	infer
+B05-W05	U07	criterion	我需要说明按什么标准纳入、比较或选择。	an inclusion criterion | meet the eligibility criteria | a selection criterion | a stopping criterion	operationalize | feasible	protocol
+B05-W06	U07	explicit	我想表明某个关系、步骤或前提被直接表达。	an explicit assumption | an explicit account of X | make X explicit | explicit spatial constraints	assumption | define	condition
+B05-W07	U08	associate	我想报告两个量共同变化，但尚不把它写成原因。	be associated with X | an association between X and Y | associate X with Y | a positive association	attribute | confound	indicate
+B05-W08	U08	attribute	我需要说明把某项变化归因于哪个因素。	attribute X to Y | be attributable to X | attribute part of the difference to X | causal attribution	mechanism | match	isolate
+B05-W09	U08	mediate	我想表达一个因素通过中间过程影响另一个对象。	mediate the effect of X on Y | a process mediated by X | a proposed mediator | mediate between two groups	mechanism | plausible	support
+B05-W10	U08	confound	我需要指出某因素使目标关系难以单独解释。	confound the association between X and Y | a potential confounder | control for measured confounders | residual confounding	control for | associate	account for
+B05-W11	U08	mechanism	我想说明一个作用通过哪些过程发生。	a mechanism underlying X | a proposed mechanism | elucidate a mechanism | a mechanistic explanation	mediate | attribute	representation
+B05-W12	U08	plausible	我需要提出与现有信息相容、但尚待区分的解释。	a plausible explanation | a plausible mechanism | biologically plausible | remain plausible	reconcile | rule out	suggest
+B05-W13	U09	align	我需要让两个表示或空间中的对应对象相互匹配。	align X with Y | align the feature distributions | spatial alignment | alignment across modalities	correspondence | fuse	encode
+B05-W14	U09	fuse	我想把多个输入或预测组合起来供共同使用。	fuse complementary features | feature-level fusion | decision-level fusion | fuse X with Y	integrate | redundant	complementary
+B05-W15	U09	integrate	我需要把一个对象纳入另一个系统或过程。	integrate X into Y | integrate information from X | an integrated workflow | integration with existing tools	fuse | update	protocol
+B05-W16	U09	disentangle	我想分开原本混合在一起的因素或信息来源。	disentangle X from Y | disentangle the effects of X and Y | disentangled representations | disentangle content and style	modality-specific | mechanism	isolate
+B05-W17	U09	modality-specific	我需要限定某些特征或操作只与某个模态相联系。	modality-specific features | modality-specific encoders | modality-specific noise | retain modality-specific information	disentangle | align	task-specific
+B05-W18	U09	redundant	我想说明某项信息或计算在给定目的下重复。	redundant computation | redundant features | reduce redundancy | non-redundant information	allocate | disentangle	trade-off
+B05-W19	U10	shift	我需要描述观察分布或工作条件发生了变化。	a distribution shift | a shift in acquisition conditions | under distribution shift | shift from X to Y	adapt | degrade	generalize
+B05-W20	U10	degrade	我需要说清什么性质在什么条件下变差。	performance degrades under X | degrade image quality | a degradation in accuracy | graceful degradation	perturb | uncertainty	robust
+B05-W21	U10	perturb	我想描述有控制地改变一个输入或条件。	perturb the input | apply a controlled perturbation | a small perturbation to X | perturbation magnitude	sensitivity | degrade	evaluate
+B05-W22	U10	adapt	我需要说明系统针对新条件调整了什么。	adapt X to Y | adapt to a new domain | test-time adaptation | an adaptive procedure	shift | update	generalize
+B05-W23	U10	calibration	我想讨论预测置信程度与实际正确程度是否相称。	confidence calibration | a calibration error | well-calibrated probabilities | post-hoc calibration	uncertainty | operationalize	assess
+B05-W24	U10	uncertainty	我需要标明对哪个对象、来自何种信息的不确定。	uncertainty in X | uncertainty about X | quantify predictive uncertainty | propagate uncertainty	calibration | propagate	infer
+B05-W25	U11	allocate	我需要把有限资源分配给不同对象。	allocate computation to X | allocate resources across X | a resource-allocation policy | allocate a fixed budget	prioritize | budget	optimize
+B05-W26	U11	prioritize	我想把一些对象排在其他对象之前。	prioritize X over Y | prioritize difficult cases | give priority to X | a priority-based schedule	allocate | criterion	assess
+B05-W27	U11	budget	我需要限定可用计算、时间或人工成本的总量。	a fixed computational budget | within the available budget | a memory budget | budget-constrained inference	allocate | latency	constraint
+B05-W28	U11	bottleneck	我想指出整个流程被哪个环节限制。	a computational bottleneck | identify the bottleneck | alleviate a bottleneck | the bottleneck in the pipeline	latency | scalable	limitation
+B05-W29	U11	latency	我需要报告从输入到输出的等待时间。	end-to-end latency | inference latency | latency per case | a latency constraint	budget | bottleneck	evaluate
+B05-W30	U11	scalable	我想说明规模增加时，方法的代价与表现怎样变化。	scalable to larger volumes | a scalable framework | assess scalability with input size | scale to high-resolution inputs	feasible | bottleneck	trade-off
+B05-W31	U12	stratify	我需要按一个有意义的变量分组再比较。	stratify cases by X | stratified sampling | a stratified analysis | performance within each stratum	match | variability	heterogeneous
+B05-W32	U12	match	我想让比较对象在指定条件上对应，而不是泛称公平。	match X to Y | match groups on X | a parameter-matched baseline | matched evaluation conditions	control for | attribute	compare
+B05-W33	U12	control for	我需要说明在分析中怎样处理某个额外因素。	control for measured differences | control for site effects | after controlling for X | control for a potential confounder	confound | match	isolate
+B05-W34	U12	sensitivity	我想研究结果随设定变化有多大，或报告一种特定检测指标。	sensitivity to X | a sensitivity analysis | sensitivity at a fixed specificity | parameter sensitivity	perturb | assumption	assess
+B05-W35	U12	variability	我需要说明结果分散，而不仅报告平均值。	between-case variability | run-to-run variability | variability across sites | report the variability in X	stratify | reproducible	consistently
+B05-W36	U12	reproducible	我想让他人能按给定资料重新执行并核对结果。	a reproducible analysis | reproducible results | reproduce the reported result | a reproducible workflow	variability | explicit	protocol
+B05-W37	U13	correspondence	我需要说明两个空间中哪些对象指向同一位置或实体。	establish correspondences | anatomical correspondence | point-to-point correspondence | correspondence between X and Y	align | deformable	representation
+B05-W38	U13	deformable	我想让配准模型允许局部形状变化，而非只允许整体位姿变化。	deformable registration | a deformation field | local deformation | a deformable object	correspondence | propagate	constraint
+B05-W39	U13	trajectory	我想描述一条路径或随时间展开的变化，而不是一个终点。	plan a trajectory | a feasible trajectory | a trajectory through X | a learning trajectory	feasible | update	optimize
+B05-W40	U13	feasible	我需要先判断方案满足约束，才谈它是否最好。	a feasible solution | a feasible set | computationally feasible | assess the feasibility of X	trajectory | criterion	constraint
+B05-W41	U13	update	我想说明新观察到来后，哪一个旧状态被修正。	update the estimated pose | an incremental update | update X in response to Y | update the plan using X	propagate | adapt	condition
+B05-W42	U13	propagate	我需要描述变化、信息或误差沿关系传到其他位置。	propagate uncertainty through X | propagate labels from X to Y | error propagation | propagate an update	uncertainty | update	predict
+B05-W43	U14	quantify	我想把某个差异或现象以明确的量表示。	quantify the difference between X and Y | quantify uncertainty | quantify the effect of X | a quantitative comparison	calibration | variability	estimate
+B05-W44	U14	reconcile	我需要解释两种看似冲突的结果怎样可能同时成立。	reconcile X with Y | reconcile conflicting findings | reconcile two accounts | difficult to reconcile with X	consistent with | scope	compare
+B05-W45	U14	consistent with	我想说明观察与某解释相容，而不声称解释唯一。	be consistent with X | evidence consistent with X | remain consistent with X | be inconsistent with X	reconcile | rule out	consistently
+B05-W46	U14	rule out	我需要说证据排除了哪种候选解释或可能性。	rule out an alternative explanation | cannot rule out X | rule out X as the sole explanation | rule out the possibility that…	plausible | warrant	isolate
+B05-W47	U14	warrant	我想说明证据使某个判断或下一步值得进行。	warrant further investigation | warrant a conclusion | warrant closer examination | be warranted by the evidence	rule out | unresolved	support
+B05-W48	U14	unresolved	我想把讨论收束到一个仍未解决、但已更明确的问题。	an unresolved question | remain unresolved | an unresolved discrepancy | leave X unresolved	scope | warrant	implication
