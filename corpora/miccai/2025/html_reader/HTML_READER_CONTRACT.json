@@ -1,0 +1,31 @@
+{
+  "schema_name": "draft:issue-2:html-first-interface-v1",
+  "status": "proposed_for_hq_integration",
+  "primary_reading_format": "html",
+  "thematic_teaching_format": "pdf",
+  "content_is_shared_but_outlines_may_differ": true,
+  "required_unit_fields": ["local_key", "source_key", "source_revision", "source_locator", "content_kind", "parent_unit", "relations", "owner_track"],
+  "proposed_content_kinds": ["author_excerpt", "contextual_reading", "editorial_analysis", "original_example", "exercise", "answer"],
+  "relation_fields": ["predicate", "target_key", "reason", "locator"],
+  "proposed_relations": ["explains", "realizes", "contrasts_with", "applies_to", "practised_by", "answered_by"],
+  "example": {
+    "local_key": "draft:issue-2:2322:method",
+    "source_key": "miccai:2025:2322",
+    "source_revision": "e1f2c4cfee82109176c58b5409b29ea85d356d39",
+    "source_locator": "PDF Section 2; associated A note, method discussion",
+    "content_kind": "editorial_analysis",
+    "parent_unit": "draft:issue-2:2322",
+    "owner_track": "A",
+    "relations": [{"predicate":"contrasts_with","target_key":"draft:issue-2:5008:method","reason":"Masking creates cross-modal collaboration in one analysis and tolerance to incomplete observations in the other.","locator":"A selected reading cases: Methods"}]
+  },
+  "publishing_rules": {
+    "do_not_assign_global_ids": true,
+    "do_not_merge_source_quote_with_original_example": true,
+    "do_not_count_source_representations_as_new_papers": true,
+    "keep_answers_separate": true,
+    "keep_private_drafts_out_of_topic_export": true,
+    "canonical_site_and_taxonomy_owned_by": "HQ"
+  },
+  "topic_selection_fields": ["title", "reader_version", "source_revision", "selected"],
+  "topic_selection_is_not_finished_pdf": true
+}
