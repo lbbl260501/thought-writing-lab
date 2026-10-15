@@ -1,0 +1,34 @@
+{
+  "_document": "D group's proposed handoff example, NOT an approved shared schema",
+  "_status": "PROPOSAL_ONLY",
+  "analysis_key": "draft:issue-5:visual-case-01",
+  "source": {
+    "source_key": "miccai:2026:2844",
+    "title": "CDFP-Net: Cross-Modal Dynamic Fusion with Diffusion Priors for PET-CT Tumor Segmentation",
+    "official_url": "https://papers.miccai.org/miccai-2026/0157-Paper2844.html",
+    "source_version": "MICCAI 2026 accepted paper",
+    "locator": "Table 4(a), paper PDF p.8",
+    "checked_scope": "Methods and directional ablation table, selected paper-body reading",
+    "claim_type": "AUTHOR_CLAIM",
+    "source_claim_paraphrase": "The authors compare PET-query-CT against the reversed query direction under matching parameter count, and report an aggregate DSC advantage for the former.",
+    "evidence_status": "SOURCE_SECTION_READ_NOT_REPLICATED"
+  },
+  "analysis": {
+    "research_action": "IDENTIFY_CONDITIONAL_EFFECT",
+    "research_object": "Patient-level expected utility of modality query direction at fixed compute budget",
+    "interpretation_status": "ANALYST_INTERPRETATION",
+    "hidden_assumption": "An average direction benefit applies equally across individual lesions",
+    "alternatives": [
+      "Direction benefit is approximately constant across relevant cases",
+      "Direction benefit varies and is prospectively predictable using case features"
+    ],
+    "proposed_test": "Paired per-case direction analysis with held-out condition-based routing; matched compute and model capacity",
+    "boundary": "Average ablation does not prove prospectively predictable case-level routing; the paper already contains reverse-direction ablation"
+  },
+  "presentation": {
+    "html_view": "interactive_case_canvas",
+    "pdf_topic_candidate": "conditional_modality_utility",
+    "reader_goal": "Differentiate architectural priors, marginal gains, and identifiable patient-conditional benefits",
+    "exercise_keys": ["draft:issue-5:exercise-visual-01"]
+  }
+}
