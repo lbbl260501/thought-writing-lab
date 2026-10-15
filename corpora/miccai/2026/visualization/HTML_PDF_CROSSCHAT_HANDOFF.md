@@ -71,7 +71,7 @@ B 组建议定义项目级原则：
 ## 4. 建议技术层次（官方技术文档已调研；仍待 HQ 选型）
 
 - **内容源层**：保留现有 Markdown、CSV、JSON/JSONL；继续把版权受限 PDF 放私人 Zotero/Drive 而非公开 repo。
-- **阅读门户层**：Astro Starlight（Markdown/MDX、搜索、双语与可复用自定义组件）。候选而非已部署事实。
+- **阅读门户层**：与 HQ 已建立的 [跨组交付 Issue #23](https://github.com/lbbl260501/thought-writing-lab/issues/23) 对齐，第一阶段**优先按 HQ 的 Quarto 多格式小型试点**推进；Astro Starlight（Markdown/MDX、搜索、双语、自定义 UI）仅作为后期阅读门户增长时的备选，不是 B 组对共享技术栈的决定。
 - **图与分析组件**：Cytoscape.js（论文/词句关系）；Mermaid（小型稳定论证流程）；Observable Plot（来源覆盖/实验比较）；React Flow 仅在未来需要节点拖动编辑时引入。
 - **专题出版层**：Quarto Books 适合章节跨格式输出；复杂中文数学/高质量印刷可以使用独立 LaTeX/Typst 模板；HTML→PDF 一键打印不等于教学编辑。
 - **分发**：HQ 决定 GitHub Pages 的构建与权限；静态页面只发布公开内容。请核验真实 Pages 配置，不要宣称已经上线。
@@ -103,3 +103,8 @@ B 组建议定义项目级原则：
 - **M4 质量反馈**：由 C/D/Q 对准确性抽样，F/HQ 对学习成效评价；公开内容与私人反馈彻底隔离。
 
 **注意**：现在这份文档是 B 的跨对话协作建议，尚不能代表 HQ/A/C/D/E/F 的正式接受。
+## 7. 与最新 HQ 跨组任务的同步（2026-10-15）
+
+本文件起草期间，HQ 已创建了正式统筹 Issue **[#23 — HTML-first interactive visualisation + thematic PDF teaching standard](https://github.com/lbbl260501/thought-writing-lab/issues/23)**。该 Issue 是更高层级的协调来源，其中首个技术试点建议**Quarto 多格式网页 + 必要的自定义 JS/Observable**，而不是立刻建设大型 Astro 门户。B 应服从 HQ 选型和单独发布任务，而不是自行决定全站架构。
+
+此 B 交接文件保留具体学术对象/关系类型/源数据边界建议，供 HQ #23 参考。原先提交到 HQ #1 的评论亦是建议，不应视为与 #23 并列的第二个最终标准。**下一步的正式决策与跨组验收以 #23 为准。**
