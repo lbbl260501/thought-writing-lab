@@ -4,9 +4,9 @@
 
 ## 两阶段方法动机：一种写法
 
-> Inputs can differ in the quality of the evidence they provide for prediction. An initial quality estimate can expose this variation, but it does not specify how the available computation should be used. We therefore separate quality assessment from budgeted route selection. The first stage characterizes the input, while the second uses that assessment to choose among processing routes under a fixed budget, allowing the two decisions to be trained and evaluated separately.
+> Inputs can differ in the quality of the evidence they provide for prediction. An initial quality estimate can expose this variation, but it does not specify how the available computation should be used. We therefore separate quality assessment from budgeted route selection. The first stage characterizes the input, while the second uses that assessment to choose among processing routes under a fixed budget. The quality estimate thus informs a resource decision rather than serving only as a descriptive score.
 
-这里有三层关系：输入差异建立任务；质量估计不等于资源决策；第二阶段承接第一阶段的输出。句末引出分别评价，而不是提前许诺性能优势。最后一个设计条件只有在真实系统确实支持分别训练和评价时才能保留；题设没有要求所有系统如此，其他实现应相应改写。
+这里有三层关系：输入差异建立任务；质量估计不等于资源决策；第二阶段承接第一阶段的输出。句末说明两者为什么连接，没有增加分别训练的实现设定，也没有提前许诺性能优势。
 
 ## 题1 · 对观察直接作陈述
 
@@ -44,9 +44,9 @@ FRODO 第4页将 FLAIR 特征产生的空间调制场用于 QSM 特征。因此�
 
 ## 题6 · 比较单位决定贡献的写法
 
-> The revised system improved performance on the shared test set through a combination of architectural and training changes.
+> The revised system achieved better performance on the shared test set following changes to the architecture, training procedure, and preprocessing.
 
-若预处理也是核心变化，应直接写 preprocessing；若尚不知道哪些变化真正产生作用，可用 following changes to the architecture, training procedure, and preprocessing，避免把每项都写成已识别的因果来源。
+following 在这里报告改动后的系统结果，不声称每一项改动都已被确定为独立的增益来源。原句把全部提升归给某一模块；改稿保留整体改善，同时使归因对象准确。
 
 一种有区分力的后续比较是：在更新后的训练与预处理方案保持不变时，替换或去掉目标模块，再评价系统表现。还可以在原基础系统中做对应对照以检查交互。这里的任务是区分整体系统效果与组件的归因，不要求所有优化因素天然可加。
 
