@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/thought-writing-lab/knowledge-record.schema.json",
+  "title": "Canonical Knowledge Record",
+  "type": "object",
+  "required": ["record_id", "record_type", "title", "status", "created_at", "provenance"],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "record_type": {"enum": ["source", "claim", "experiment", "interpretation", "language_move", "teaching_item"]},
+    "title": {"type": "string", "minLength": 1},
+    "status": {"enum": ["draft", "candidate", "reviewed", "approved", "superseded", "rejected"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "provenance": {
+      "type": "object",
+      "required": ["origin_type", "checked_scope"],
+      "properties": {
+        "origin_type": {"enum": ["primary_source", "official_metadata", "experiment_run", "analyst_interpretation", "teaching_example"]},
+        "source_url": {"type": "string", "format": "uri"},
+        "source_id": {"type": "string"},
+        "locator": {"type": "string"},
+        "checked_scope": {"enum": ["metadata", "abstract", "introduction", "selected_sections", "full_text", "experiment_output", "not_applicable"]},
+        "checked_by": {"type": "string"},
+        "checked_at": {"type": "string", "format": "date-time"}
+      },
+      "additionalProperties": false
+    },
+    "claim": {
+      "type": "object",
+      "properties": {
+        "claim_type": {"enum": ["author_claim", "observed_result", "analyst_interpretation", "transfer_hypothesis", "teaching_assumption"]},
+        "text": {"type": "string"},
+        "conditions": {"type": "array", "items": {"type": "string"}},
+        "counterevidence": {"type": "array", "items": {"type": "string"}},
+        "uncertainty": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "experiment": {
+      "type": "object",
+      "properties": {
+        "hypothesis": {"type": "string"},
+        "dataset": {"type": "string"},
+        "split": {"type": "string"},
+        "intervention": {"type": "string"},
+        "controls": {"type": "array", "items": {"type": "string"}},
+        "metric": {"type": "array", "items": {"type": "object", "required": ["name", "value"], "properties": {"name": {"type": "string"}, "value": {"type": ["number", "string"]}, "unit": {"type": "string"}, "run_id": {"type": "string"}}}},
+        "code_version": {"type": "string"},
+        "config_ref": {"type": "string"},
+        "limitations": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "relationships": {"type": "array", "items": {"type": "object", "required": ["relation", "target_id"], "properties": {"relation": {"type": "string"}, "target_id": {"type": "string"}}}},
+    "tags": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}
