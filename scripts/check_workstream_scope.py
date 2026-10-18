@@ -20,6 +20,8 @@ ALLOWED = {
     "agent/scientific-reasoning/": ("knowledge/scientific-reasoning/",),
     "agent/interdisciplinary/": ("knowledge/interdisciplinary/",),
     "agent/daily-learning/": ("courses/daily/",),
+    # Issue #26 authorizes R03 only; later rounds need their own scope review.
+    "agent/cross-domain/": ("courses/studios/cross-domain/round-03/",),
 }
 # Integration and core-governance PRs are main-chat owned and manually reviewed.
 MAINTAINER_PREFIX = "coord/"
@@ -49,8 +51,11 @@ def main() -> int:
         allowed_paths = match[1]
 
     merge_base = run("git", "merge-base", args.base, args.head)
-    files = run("git", "diff", "--name-only", "--diff-filter=ACMRD",
-                merge_base, args.head).splitlines()
+    # Treat renames as deletion + addition so both paths are checked. NUL
+    # delimiters preserve unusual filenames without Git quoting/splitting them.
+    files = run("git", "diff", "--name-only", "--no-renames", "-z",
+                "--diff-filter=ACMRDT", merge_base, args.head).split("\0")
+    files = [fn for fn in files if fn]
     failures = []
     for fn in files:
         path = fn.replace("\\", "/")
