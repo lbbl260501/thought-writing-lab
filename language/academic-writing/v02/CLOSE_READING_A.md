@@ -102,7 +102,9 @@
 
 **分类判定。** 主标 F6.3 COUPLING；局部操作也可标 F6.1。R为共享/独立设置的 CONTRAST。E把设计事实与期望效果分开：说明结构如何设置，可以据方法文字核验；说这种设置确实带来互补性和收益，则需要相应比较证据。
 
-**对照实验。** “该网络共享权重以学习互补特征”删除了哪些权重共享、哪些不共享的关键差别。原创训练句 *The branches share one transformation while retaining separate output projections, so the description must distinguish coupling from complete parameter sharing.* 是结构表达训练，不是作者逐字表述或新的实验结论。
+**对照实验。** “该网络共享权重以学习互补特征”删除了哪些权重共享、哪些不共享的关键差别。原创训练句 *The two branches share the query and key projections but retain separate value projections.* 保留共享对象与独立对象的对应关系，是结构表达训练，不是作者逐字表述或新的实验结论。
+
+**本句修订记录（2026-10-18）。** 依据上述作者版本§1及§3.2，旧训练句的“one transformation”和“output projections”分别改为具体的查询/键投影与值投影。此次纠正的是教学释写的技术对象，不是修改作者原文；设计设置也不单独构成互补机制的验证。
 
 **迁移操作。** 讨论双编码器、模态非对称学习或分支协同时，分别写清共享对象、独立对象、连接位置、设计目的和验证要求。描述精细并不要求展开所有张量尺寸；最重要的是保留决定科学含义的差别。
 
