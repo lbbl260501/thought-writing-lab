@@ -4,6 +4,8 @@ import math
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
+from types import SimpleNamespace
 
 P = Path(__file__).resolve().parent
 spec = importlib.util.spec_from_file_location('release_build', P / 'build.py')
@@ -15,6 +17,14 @@ class ReleaseTests(unittest.TestCase):
         self.data = b.load(P / 'records.json')
         self.schema = b.load(b.SCHEMA)
         self.index = b.validate(self.data, self.schema)
+
+    def test_required_format_support_available(self):
+        self.assertTrue({'date-time', 'uri'}.issubset(b.FormatChecker().checkers))
+
+    def test_missing_format_support_fails_closed(self):
+        with patch.object(b, 'FormatChecker', return_value=SimpleNamespace(checkers={})):
+            with self.assertRaisesRegex(ValueError, 'Missing JSON Schema format support'):
+                b.validate(self.data, self.schema)
 
     def test_versioned_schema_path(self):
         self.assertEqual(b.SCHEMA.name, 'knowledge-record.v0.2.schema.json')

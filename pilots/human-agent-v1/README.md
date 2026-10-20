@@ -26,7 +26,7 @@ A–F的任务方向不变。Q改为两阶段：`Q.json`只提供4项来源和�
 
 旧的 `knowledge-base/schemas/knowledge-record.schema.json` 保持原状。生成器仅引用新的 `knowledge-record.v0.2.schema.json`。新版更严格，面向当前论文结果试点，不兼容所有旧记录；禁止直接重命名后全库替换，也不进行自动迁移。已有各组PR不被重写。
 
-原31项测试保留，新增9项版本、审核材料分阶段、页面标题与非有限数值的回归，合计40项。测试检查工程约束，不证明解释正确、实验已复现或教学有效。
+原31项测试保留，新增11项版本、审核材料分阶段、页面标题、非有限数值和必需格式依赖的回归，合计42项。测试检查工程约束，不证明解释正确、实验已复现或教学有效。
 
 ## 并行工程检查
 
@@ -55,3 +55,11 @@ python pilots/human-agent-v1/parallel_check.py
 - https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax
 
 源码可以重建两个HTML、两个未执行Quarto的qmd和八份Agent包。`dist/`、运行日志、截图与浏览器临时输入不提交到源码树，避免把生成物和个人记录变成新的事实副本。
+
+## 干净环境发现与修复
+
+首次GitHub Actions运行39398582505的两个Python回归任务发现日期格式负例没有被拒绝：单装jsonschema并不保证date-time检查依赖存在。本地预装依赖掩盖了这个问题。现在要求安装`jsonschema[format-nongpl]==4.26.0`，并在生成器启动验证时检查date-time与uri检查器是否可用；缺少时直接失败，不静默跳过。新增两个回归分别检查依赖可用性和缺依赖时拒绝构建。
+
+首次远端浏览器完整模式已成功，覆盖真实文件导航、同一上下文刷新保存和下载内容；本地render-only与远端完整验证仍分别记录。最新修复提交是否全绿，以PR中的具体运行日志为准。
+
+官方依据：https://python-jsonschema.readthedocs.io/en/stable/validate/#validating-formats

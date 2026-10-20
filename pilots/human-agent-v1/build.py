@@ -39,7 +39,11 @@ def validate(data: dict, schema: dict) -> dict:
     if data.get('schema_version') != '0.2.0' or not isinstance(data.get('records'), list):
         raise ValueError('Invalid bundle/version')
     Draft202012Validator.check_schema(schema)
-    validator = Draft202012Validator(schema, format_checker=FormatChecker())
+    checker = FormatChecker()
+    required_formats = {'date-time', 'uri'}
+    if not required_formats.issubset(checker.checkers):
+        raise ValueError('Missing JSON Schema format support; install requirements.txt with format-nongpl extras')
+    validator = Draft202012Validator(schema, format_checker=checker)
     index = {}
     for r in data['records']:
         errors = sorted(validator.iter_errors(r), key=lambda e: str(list(e.path)))
