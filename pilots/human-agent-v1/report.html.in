@@ -1,0 +1,6 @@
+<header class="hero"><p class="eyebrow">研究结果读本</p><h1>系统收益与机制解释<br><span>需要分开回答</span></h1><p class="lead">以 UNETR++ 的 Synapse 比较为例，区分结果报告、机制描述与后续检验。</p></header>
+<main><section><h2>比较结果</h2><p>以下数值摘自作者稿Table 2；这是对论文结果的整理，不是本项目重新训练模型得到的结果。</p>{{table:table2}}<p class="result">{{comparison:table2}}</p></section>
+<section><h2>怎样理解这个比较？</h2>{{claim:attribution}}<p>因此，结果段可以先正面陈述系统改进，再解释哪些设计发生了变化。若要把差值分配给某一个机制，需要与该机制对应的对照，而不是只根据方法名称作判断。</p></section>
+<section><h2>一个需要准确表达的设计事实</h2>{{claim:sharing}}{{example:sharing-move}}</section>
+<section><h2>下一项可执行比较</h2><p>在相同架构、数据划分、训练更新次数和检查点选择规则下，比较共享投影与非共享投影。报告精度与参数规模；必要时再加入预算匹配的比较。这是候选实验设计，尚无新结果。</p></section>
+<section><h2>出处</h2>{{cite:unetr}}</section></main><footer>作者稿结果整理 · 非实验复现</footer>

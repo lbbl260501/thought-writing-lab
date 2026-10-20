@@ -1,0 +1,55 @@
+<header class="hero">
+<p class="eyebrow">科研表达 · 关系、证据与迁移</p>
+<h1>不再罗列模块<br><span>把研究关系写清楚</span></h1>
+<p class="lead">方法名称告诉读者你用了什么；清楚的关系告诉读者，这些部分为什么需要一起工作。</p>
+<p>从一句含糊的“协同”，走到能够解释设计、安排对照、组织结果的完整论证。</p>
+</header>
+<nav aria-label="课程导航"><a href="#start">先试一题</a><a href="#relation">辨认关系</a><a href="#evidence">读取结果</a><a href="#paragraph">组织段落</a><a href="#practice">独立练习</a><a href="#answers">答案讲解</a></nav>
+<main>
+<section id="start"><p class="kicker">01 / 从真实困难开始</p><h2>你写出了组件，却没有写出关系</h2>
+<p>读下面这句话。它没有明显语法错误，但读者仍然不知道两个模块如何协作。</p>
+<div class="example weak"><p lang="en">Our framework combines two powerful modules to learn better representations.</p><p>我们的框架组合两个强大模块，以学习更好的表示。</p></div>
+<p>把 <em>powerful</em> 换成 <em>effective</em>，或把 <em>combines</em> 换成 <em>integrates</em>，没有解决问题。真正缺少的是：一部分为另一部分提供了什么，又改变了什么。先不用复杂术语，尝试补出这个关系。</p>
+<label for="baseline">先写两句：你熟悉的两个模块之间，究竟发生了什么？</label><textarea id="baseline" class="draft" rows="4" placeholder="先写自己的版本，再往下看。"></textarea>
+<aside>本讲只训练一个动作：<strong>把“同时存在的部分”写成“相互作用的关系”。</strong>不要求你先理解全部网络细节。</aside></section>
+<section id="relation"><p class="kicker">02 / 先判断，再选词</p><h2>共享、反馈和比较，是三种不同关系</h2>
+<h3>共享：哪里相同，哪里仍然不同？</h3>
+{{claim:sharing}}
+{{example:sharing-move}}
+<p>这里值得学的不是某个高级动词，而是两个并列动作的精确分工。<em>share</em> 后面的宾语说明什么被共同使用；<em>use separate</em> 后面的宾语说明什么仍然保留差异。换掉宾语，就可能把设计改成另一件事。</p>
+<details><summary>为什么“输出投影”不宜随意代替“value投影”？</summary><p>两者指向的操作不相同。写作中的抽象应保留关系的关键对象，而不是把具体名词统统换成“特征”“表示”或“输出”。此外，这里说的是两条分支共用各自的query/key映射，并不是说query映射与key映射彼此相同。</p>{{cite:unetr}}</details>
+<h3>反馈：本轮产物，怎样改变下一轮？</h3>
+{{claim:feedback}}
+<p>判断反馈，不能只数运行了几轮。假设你把同一个模型运行四次，每次都没有利用上一轮的信息，这只是重复。下面是另一种原创教学情境；它只借用回流关系，不复述论文的具体流程。</p>
+{{example:feedback-move}}
+<p>第二句的主语接住第一句带出的标注对象，再通过 <em>update</em> 说明回流，通过 <em>then proposes</em> 说明下一轮后果。句间衔接因此不是靠再加一个“此外”。</p>
+<h3>比较：两种方法是在同一种规则下被选出来的吗？</h3>
+{{claim:selection}}
+{{example:comparison-move}}
+<p>这类条件不是礼貌性的自我削弱，而是比较本身的组成部分。只说“我们公平地比较”，读者无法知道公平体现在哪里；指出训练预算和选择规则，才把评价要求落到了可检查的安排上。</p>
+<div class="three"><article><h4>共享</h4><p>保留“共同使用什么”与“分别保留什么”。</p></article><article><h4>反馈</h4><p>追踪产物如何回流，并改变后续行为。</p></article><article><h4>比较</h4><p>明确改变的因素，以及保持一致的条件。</p></article></div></section>
+<section id="evidence"><p class="kicker">03 / 从表格到科学判断</p><h2>一个正面结果，能回答多大的问题？</h2>
+<p>先只读结果，不急着解释原因。下面是已发表作者稿的一张小表，数值来自论文，而不是本课程进行的新实验。</p>
+{{table:table2}}
+<p class="result">{{comparison:table2}}</p>
+<p>这条结果可以直接写出来，无须先加“也许”。但如果下一句写成“因此，共享投影解释了全部收益”，问题就变了：我们已经从比较整体系统，转向识别其中某一种机制。</p>
+{{claim:attribution}}
+<details><summary>怎样把这个判断落实为下一项实验？</summary><p>先固定架构、数据划分和训练协议，再比较共享与不共享投影的版本。这是我们设计的候选对照，不是声称原论文已经完成了这项实验。共享还会改变参数量，因此第一套实验估计的是共享这一设计改变的总体作用；要进一步区分参数规模的影响，还需要报告参数差异，并考虑预算匹配的补充比较。</p></details>
+<aside>不要把“避免过度归因”误写成“不能承认有效”。<strong>保留已经得到支持的正面结果，再把尚待解释的部分变成具体研究问题。</strong></aside></section>
+<section id="paragraph"><p class="kicker">04 / 把句子组织成推进</p><h2>段落不是四个标签，而是一条理解路径</h2>
+<p>下面是一个原创的自动标注研究设定。它尚无实验结果。请注意每句话为下一句留下了什么可继续讨论的对象。</p>
+<div class="example"><p lang="en">An annotation pipeline may repeatedly generate labels without changing how difficult regions are selected. We therefore study a feedback rule that uses verified labels to revise subsequent region proposals. To separate the value of feedback from the effect of additional training, we compare updated and fixed-label conditions under the same training budget. This comparison tests whether revising the information passed between rounds changes which regions the system learns from.</p><p>标注流程可能反复生成标签，却并未改变困难区域的选择方式。因此，我们研究一种利用核实标签来修订后续区域提议的反馈规则。为区分反馈本身的价值与额外训练的影响，我们在相同训练预算下比较更新标签与固定标签两种条件。这样的比较检验：修订轮次之间传递的信息，是否会改变系统学习的区域。</p></div>
+<div class="steps"><p><b>第一句</b> 不是先宣布旧方法差，而是指出一个具体的脱节：重复生成没有改变选择。</p><p><b>第二句</b> 回答脱节发生在什么关系上，因此新的研究对象是反馈规则，而不是又一个模块名称。</p><p><b>第三句</b> 主动提出竞争解释：看到的变化会不会只是训练更多造成的？</p><p><b>第四句</b> 说明对照究竟检验什么，避免把实验安排写成无目的的清单。</p></div>
+<p>这不是要求每段都写四句。练习的重点是检查：删掉任何一句，读者会失去哪一步理解？如果某句只重复“有效、先进、协同”，它可能并没有承担新的论证工作。</p></section>
+<section id="transfer"><p class="kicker">05 / 抽象，但不丢掉对象</p><h2>迁移的是关系，不是医学名词</h2>
+{{claim:analogy}}
+<p>把自动标注迁移到遥感时，可以替换输入影像、标签类型和候选单位，但要保留你真正研究的关系：核实后的信息进入更新，并改变后续选择。反过来，如果只有“两个系统都使用模型”这一点相同，类比还不足以指导设计。</p>
+<p>还需要一个失效情境。例如核查者把季节变化稳定地误判成真实变化，反馈就可能不断强化错误。这个情境不是对反馈的一般否定，而是在告诉你：新任务需要怎样的质量控制或对照。</p>
+<aside>先写出关系，再检查新任务是否具备让关系成立的条件。由此提出的跨领域设计仍是<strong>待检验的研究假设</strong>。</aside></section>
+<section id="practice"><p class="kicker">06 / 独立完成</p><h2>四道练习，把判断变成表达</h2><p>以下题面与参考表达均为原创教学材料。先作答，再看答案；不要将写完一道题等同于已经掌握。</p>
+{{exercises:all}}
+<button type="button" id="export">导出我的作答</button><p id="save-note" role="status">作答只保存在本机浏览器；页面不向服务器发送内容。</p></section>
+<section id="answers"><p class="kicker">07 / 对照与修订</p><h2>答案为什么这样写？</h2><p>参考答案不是唯一解。核对的是关键关系是否保留、结果是否与题设一致，以及你能否说明修改理由。下面的检查项不自动换算为个人分数。</p>{{answers:all}}
+<h3>离开范例后的再练习</h3><p>下一次不用本页的模型名，选一个你自己的研究问题：写出关系，列出一种竞争解释，再安排一项可以区分两者的比较。完成后再回看本讲，检查自己迁移的是操作还是词句。</p></section>
+<section id="sources"><h2>原文入口</h2><p>这些来源承担不同角色：设计事实、反馈示例、评价论点与类比理论。阅读范围与版本在各入口下说明。</p>{{sources:all}}</section>
+</main><footer>科研表达学习单元 · 试用稿</footer>
